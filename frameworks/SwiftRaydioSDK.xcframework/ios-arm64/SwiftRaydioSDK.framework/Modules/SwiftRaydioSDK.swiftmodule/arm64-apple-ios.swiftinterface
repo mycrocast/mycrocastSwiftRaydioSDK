@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SwiftRaydioSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SwiftRaydioSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
 import Foundation
 import Mediasoup
@@ -157,16 +157,28 @@ public protocol MycrocastRaydioSDK {
   var listenStateAccess: any SwiftRaydioSDK.ListenStateAccess { get }
   var sdkStateAccess: any SwiftRaydioSDK.SDKStateAccess { get }
   var errorAccess: any SwiftRaydioSDK.ErrorAccess { get }
+  #if compiler(>=5.3) && $AsyncAwait
   func connect() async -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func reconnectAudio() async -> SwiftRaydioSDK.ListenFailedReason?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func playStream(_ streamId: Swift.String) async -> SwiftRaydioSDK.ListenFailedReason?
+  #endif
   func pauseCurrentStream()
   func onConnectionLost()
+  #if compiler(>=5.3) && $AsyncAwait
   func onConnectionReestablished() async -> Swift.Bool
+  #endif
   func onBackgroundEntered()
+  #if compiler(>=5.3) && $AsyncAwait
   func onForegroundEntered() async -> Swift.Bool
+  #endif
   func isPlaying(_ streamId: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $AsyncAwait
   func refreshStreams() async -> [SwiftRaydioSDK.MycrocastStream]
+  #endif
 }
 public protocol StreamsDelegate {
   func onStreamAdded(_ stream: SwiftRaydioSDK.MycrocastStream)

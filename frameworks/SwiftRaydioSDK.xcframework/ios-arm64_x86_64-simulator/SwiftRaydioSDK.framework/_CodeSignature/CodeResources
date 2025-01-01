@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SwiftRaydioSDK-Swift.h</key>
 		<data>
-		BjxMDKnBc6IW+R++gVvgtEe63KA=
+		jb6+cpK8XFabJOz0lnARG+RwZK4=
 		</data>
 		<key>Headers/SwiftRaydioSDK.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I7JaU3CFfrniQLbaUs1wxx03UDU=
+		XxsY9DDgpxR6m1y9Kpn/4gV1XPQ=
 		</data>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		OmkTV4M7a0gfux5+8BdTdKrSWig=
+		4h0UPVdpoicdVB81JhvYj+i2vT4=
 		</data>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		88Kz/cw87Tk5zkF28bVQ5jAV2Fk=
+		0q5usnxVf/ghcXsDn93M47TT+n8=
 		</data>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		267HfQbA9A+TDrLhvC23QSDIH+0=
+		TFYNns4b8iIz8dkKwtb5N5UhRvg=
 		</data>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		88Kz/cw87Tk5zkF28bVQ5jAV2Fk=
+		0q5usnxVf/ghcXsDn93M47TT+n8=
 		</data>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RObUSqQpVAPNECpNhGXknAYu7wo=
+		YsOqFNDrzY8siCK5hbnxAJA34wk=
 		</data>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		OmkTV4M7a0gfux5+8BdTdKrSWig=
+		4h0UPVdpoicdVB81JhvYj+i2vT4=
 		</data>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		DnPV+nnlbjj/suxY+//kN8OA0sI=
+		Qp4X0NFZ7tvIGbD4nm/OUXfvMgI=
 		</data>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zH3u44jTXd6ZPBx1BrkfjFzh3TE=
+		BvM9PDEBIsmZ5WhibW/K+XsR8m0=
 		</data>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DnPV+nnlbjj/suxY+//kN8OA0sI=
+		Qp4X0NFZ7tvIGbD4nm/OUXfvMgI=
 		</data>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		f0peBRgWfGv8fiuq6u312EiAAa0=
+		ForfE6dYrmThZNjcBml679kdjho=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0bgFK2yQ+lyx5apG0MWsBqQ1uRyFP2Ptl59HQdHWkuI=
+			G8FaMUjOjMcIml8C+iE/HdmwaS0b8mByKiCerL5jI2E=
 			</data>
 		</dict>
 		<key>Headers/SwiftRaydioSDK.h</key>
@@ -85,70 +85,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4qVgO2Rxf9pEVnzwzrMvvb2JQ/71L48A81/kYHtPj3w=
+			Qc9VheOlThCtTBIYAJK+mYlc0NLjUU28p3uT4mcjb8M=
 			</data>
 		</dict>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IOyzwJKiQ3hjZ3g+rw4domNcLjbUJq7sNr18XHfA/UQ=
+			gP6URI6yKtZibogGUiY5a+SMdi17sLRu0qdngykXdBA=
 			</data>
 		</dict>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uVRcyZpyHCuqoGx71uaGWvC42ucRtTAtZySozSAqcq4=
+			M3FNpna6KxPCY1/kUL94jFnUn0+NEIyhruI7LPXe8cU=
 			</data>
 		</dict>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IOyzwJKiQ3hjZ3g+rw4domNcLjbUJq7sNr18XHfA/UQ=
+			gP6URI6yKtZibogGUiY5a+SMdi17sLRu0qdngykXdBA=
 			</data>
 		</dict>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jKObRnns3gFzHXU9KdUboyiaiJsjQqmRLnmTFuObV0g=
+			3mlsPPlS/DZAGISZWCsKJO9iqKlbBjt+/fWG9KfjkZM=
 			</data>
 		</dict>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4qVgO2Rxf9pEVnzwzrMvvb2JQ/71L48A81/kYHtPj3w=
+			Qc9VheOlThCtTBIYAJK+mYlc0NLjUU28p3uT4mcjb8M=
 			</data>
 		</dict>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yahrfMOelnt1HcpMm153eoOjRdT/1PYNJRHr2/uDfLY=
+			bh1aqngdJOwhJ7l9OKqk4lQYEw7M7GOFR335jlkeCF8=
 			</data>
 		</dict>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YgtNZhKIVg2LYoeFkSyL5BpZNiptt9RRTGJ24Vbr77k=
+			md1SGaKocSNCk7l4sBeREvPG14QkA2my27o4m/HhiOI=
 			</data>
 		</dict>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yahrfMOelnt1HcpMm153eoOjRdT/1PYNJRHr2/uDfLY=
+			bh1aqngdJOwhJ7l9OKqk4lQYEw7M7GOFR335jlkeCF8=
 			</data>
 		</dict>
 		<key>Modules/SwiftRaydioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W0+z9b0nLW6W8I3MlqiOeSd59UaTu0LLVmybWEKimfw=
+			mOdOmOGOLSyI5dpZVU5/HQ6nnXZoyZaWcY2iVNli6Ig=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

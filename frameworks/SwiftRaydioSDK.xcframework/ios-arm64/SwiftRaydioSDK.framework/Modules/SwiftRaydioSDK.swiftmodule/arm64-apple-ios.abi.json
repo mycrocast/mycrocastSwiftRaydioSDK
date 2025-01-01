@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "SwiftRaydioSDK",
-    "printedName": "SwiftRaydioSDK",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
     "children": [
       {
         "kind": "Import",
@@ -258,20 +258,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -436,12 +422,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any SwiftRaydioSDK.ListenStateDelegate)?",
+                "printedName": "SwiftRaydioSDK.ListenStateDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "ListenStateDelegate",
-                    "printedName": "any SwiftRaydioSDK.ListenStateDelegate",
+                    "printedName": "SwiftRaydioSDK.ListenStateDelegate",
                     "usr": "s:14SwiftRaydioSDK19ListenStateDelegateP"
                   }
                 ],
@@ -465,12 +451,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any SwiftRaydioSDK.ListenStateDelegate)?",
+                    "printedName": "SwiftRaydioSDK.ListenStateDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ListenStateDelegate",
-                        "printedName": "any SwiftRaydioSDK.ListenStateDelegate",
+                        "printedName": "SwiftRaydioSDK.ListenStateDelegate",
                         "usr": "s:14SwiftRaydioSDK19ListenStateDelegateP"
                       }
                     ],
@@ -500,12 +486,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any SwiftRaydioSDK.ListenStateDelegate)?",
+                    "printedName": "SwiftRaydioSDK.ListenStateDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ListenStateDelegate",
-                        "printedName": "any SwiftRaydioSDK.ListenStateDelegate",
+                        "printedName": "SwiftRaydioSDK.ListenStateDelegate",
                         "usr": "s:14SwiftRaydioSDK19ListenStateDelegateP"
                       }
                     ],
@@ -587,22 +573,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -745,22 +715,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -827,22 +781,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -1073,20 +1011,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Hashable",
@@ -1407,7 +1331,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "any Swift.Encoder",
+                "printedName": "Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -1429,20 +1353,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -1649,7 +1559,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "any Swift.Encoder",
+                "printedName": "Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -1671,20 +1581,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -1786,7 +1682,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MycrocastRaydioSDK",
-                "printedName": "any SwiftRaydioSDK.MycrocastRaydioSDK",
+                "printedName": "SwiftRaydioSDK.MycrocastRaydioSDK",
                 "usr": "s:14SwiftRaydioSDK09MycrocastbC0P"
               },
               {
@@ -1815,23 +1711,7 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -2170,20 +2050,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2406,12 +2272,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any SwiftRaydioSDK.RaydioSDKStateDelegate)?",
+                "printedName": "SwiftRaydioSDK.RaydioSDKStateDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "RaydioSDKStateDelegate",
-                    "printedName": "any SwiftRaydioSDK.RaydioSDKStateDelegate",
+                    "printedName": "SwiftRaydioSDK.RaydioSDKStateDelegate",
                     "usr": "s:14SwiftRaydioSDK0B16SDKStateDelegateP"
                   }
                 ],
@@ -2435,12 +2301,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any SwiftRaydioSDK.RaydioSDKStateDelegate)?",
+                    "printedName": "SwiftRaydioSDK.RaydioSDKStateDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "RaydioSDKStateDelegate",
-                        "printedName": "any SwiftRaydioSDK.RaydioSDKStateDelegate",
+                        "printedName": "SwiftRaydioSDK.RaydioSDKStateDelegate",
                         "usr": "s:14SwiftRaydioSDK0B16SDKStateDelegateP"
                       }
                     ],
@@ -2470,12 +2336,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any SwiftRaydioSDK.RaydioSDKStateDelegate)?",
+                    "printedName": "SwiftRaydioSDK.RaydioSDKStateDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "RaydioSDKStateDelegate",
-                        "printedName": "any SwiftRaydioSDK.RaydioSDKStateDelegate",
+                        "printedName": "SwiftRaydioSDK.RaydioSDKStateDelegate",
                         "usr": "s:14SwiftRaydioSDK0B16SDKStateDelegateP"
                       }
                     ],
@@ -2526,22 +2392,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -2751,7 +2601,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "any Swift.Encoder",
+                "printedName": "Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -2773,20 +2623,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -2987,7 +2823,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "any Swift.Encoder",
+                "printedName": "Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -3009,20 +2845,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3336,7 +3158,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "any Swift.Encoder",
+                "printedName": "Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -3358,20 +3180,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3753,7 +3561,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "any Swift.Encoder",
+                "printedName": "Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -3774,20 +3582,6 @@
           "AccessControl"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3861,22 +3655,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -3943,22 +3721,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -4058,12 +3820,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any SwiftRaydioSDK.ErrorDelegate)?",
+                "printedName": "SwiftRaydioSDK.ErrorDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "ErrorDelegate",
-                    "printedName": "any SwiftRaydioSDK.ErrorDelegate",
+                    "printedName": "SwiftRaydioSDK.ErrorDelegate",
                     "usr": "s:14SwiftRaydioSDK13ErrorDelegateP"
                   }
                 ],
@@ -4084,12 +3846,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any SwiftRaydioSDK.ErrorDelegate)?",
+                    "printedName": "SwiftRaydioSDK.ErrorDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ErrorDelegate",
-                        "printedName": "any SwiftRaydioSDK.ErrorDelegate",
+                        "printedName": "SwiftRaydioSDK.ErrorDelegate",
                         "usr": "s:14SwiftRaydioSDK13ErrorDelegateP"
                       }
                     ],
@@ -4119,12 +3881,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any SwiftRaydioSDK.ErrorDelegate)?",
+                    "printedName": "SwiftRaydioSDK.ErrorDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ErrorDelegate",
-                        "printedName": "any SwiftRaydioSDK.ErrorDelegate",
+                        "printedName": "SwiftRaydioSDK.ErrorDelegate",
                         "usr": "s:14SwiftRaydioSDK13ErrorDelegateP"
                       }
                     ],
@@ -4172,22 +3934,6 @@
         "moduleName": "SwiftRaydioSDK",
         "declAttributes": [
           "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -4480,7 +4226,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "any Swift.Encoder",
+                "printedName": "Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -4502,20 +4248,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -5066,7 +4798,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "any Swift.Encoder",
+                "printedName": "Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -5088,20 +4820,6 @@
           "RawDocComment"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -5514,12 +5232,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any SwiftRaydioSDK.StreamsDelegate)?",
+                "printedName": "SwiftRaydioSDK.StreamsDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "StreamsDelegate",
-                    "printedName": "any SwiftRaydioSDK.StreamsDelegate",
+                    "printedName": "SwiftRaydioSDK.StreamsDelegate",
                     "usr": "s:14SwiftRaydioSDK15StreamsDelegateP"
                   }
                 ],
@@ -5543,12 +5261,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any SwiftRaydioSDK.StreamsDelegate)?",
+                    "printedName": "SwiftRaydioSDK.StreamsDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "StreamsDelegate",
-                        "printedName": "any SwiftRaydioSDK.StreamsDelegate",
+                        "printedName": "SwiftRaydioSDK.StreamsDelegate",
                         "usr": "s:14SwiftRaydioSDK15StreamsDelegateP"
                       }
                     ],
@@ -5578,12 +5296,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any SwiftRaydioSDK.StreamsDelegate)?",
+                    "printedName": "SwiftRaydioSDK.StreamsDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "StreamsDelegate",
-                        "printedName": "any SwiftRaydioSDK.StreamsDelegate",
+                        "printedName": "SwiftRaydioSDK.StreamsDelegate",
                         "usr": "s:14SwiftRaydioSDK15StreamsDelegateP"
                       }
                     ],
@@ -5634,22 +5352,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -5777,7 +5479,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "any Swift.Decoder",
+                "printedName": "Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -5798,20 +5500,6 @@
           "AccessControl"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -5958,7 +5646,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "StreamsAccess",
-                "printedName": "any SwiftRaydioSDK.StreamsAccess",
+                "printedName": "SwiftRaydioSDK.StreamsAccess",
                 "usr": "s:14SwiftRaydioSDK13StreamsAccessP"
               }
             ],
@@ -5979,7 +5667,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "StreamsAccess",
-                    "printedName": "any SwiftRaydioSDK.StreamsAccess",
+                    "printedName": "SwiftRaydioSDK.StreamsAccess",
                     "usr": "s:14SwiftRaydioSDK13StreamsAccessP"
                   }
                 ],
@@ -6003,7 +5691,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "LogAccess",
-                "printedName": "any SwiftRaydioSDK.LogAccess",
+                "printedName": "SwiftRaydioSDK.LogAccess",
                 "usr": "s:14SwiftRaydioSDK9LogAccessP"
               }
             ],
@@ -6024,7 +5712,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "LogAccess",
-                    "printedName": "any SwiftRaydioSDK.LogAccess",
+                    "printedName": "SwiftRaydioSDK.LogAccess",
                     "usr": "s:14SwiftRaydioSDK9LogAccessP"
                   }
                 ],
@@ -6048,7 +5736,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ListenStateAccess",
-                "printedName": "any SwiftRaydioSDK.ListenStateAccess",
+                "printedName": "SwiftRaydioSDK.ListenStateAccess",
                 "usr": "s:14SwiftRaydioSDK17ListenStateAccessP"
               }
             ],
@@ -6069,7 +5757,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ListenStateAccess",
-                    "printedName": "any SwiftRaydioSDK.ListenStateAccess",
+                    "printedName": "SwiftRaydioSDK.ListenStateAccess",
                     "usr": "s:14SwiftRaydioSDK17ListenStateAccessP"
                   }
                 ],
@@ -6093,7 +5781,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "SDKStateAccess",
-                "printedName": "any SwiftRaydioSDK.SDKStateAccess",
+                "printedName": "SwiftRaydioSDK.SDKStateAccess",
                 "usr": "s:14SwiftRaydioSDK14SDKStateAccessP"
               }
             ],
@@ -6114,7 +5802,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "SDKStateAccess",
-                    "printedName": "any SwiftRaydioSDK.SDKStateAccess",
+                    "printedName": "SwiftRaydioSDK.SDKStateAccess",
                     "usr": "s:14SwiftRaydioSDK14SDKStateAccessP"
                   }
                 ],
@@ -6138,7 +5826,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ErrorAccess",
-                "printedName": "any SwiftRaydioSDK.ErrorAccess",
+                "printedName": "SwiftRaydioSDK.ErrorAccess",
                 "usr": "s:14SwiftRaydioSDK11ErrorAccessP"
               }
             ],
@@ -6159,7 +5847,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ErrorAccess",
-                    "printedName": "any SwiftRaydioSDK.ErrorAccess",
+                    "printedName": "SwiftRaydioSDK.ErrorAccess",
                     "usr": "s:14SwiftRaydioSDK11ErrorAccessP"
                   }
                 ],
@@ -6466,22 +6154,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -6631,22 +6303,6 @@
         "moduleName": "SwiftRaydioSDK",
         "declAttributes": [
           "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       },
       {
@@ -7041,12 +6697,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any SwiftRaydioSDK.LogDelegate)?",
+                "printedName": "SwiftRaydioSDK.LogDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "LogDelegate",
-                    "printedName": "any SwiftRaydioSDK.LogDelegate",
+                    "printedName": "SwiftRaydioSDK.LogDelegate",
                     "usr": "s:14SwiftRaydioSDK11LogDelegateP"
                   }
                 ],
@@ -7070,12 +6726,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any SwiftRaydioSDK.LogDelegate)?",
+                    "printedName": "SwiftRaydioSDK.LogDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "LogDelegate",
-                        "printedName": "any SwiftRaydioSDK.LogDelegate",
+                        "printedName": "SwiftRaydioSDK.LogDelegate",
                         "usr": "s:14SwiftRaydioSDK11LogDelegateP"
                       }
                     ],
@@ -7105,12 +6761,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any SwiftRaydioSDK.LogDelegate)?",
+                    "printedName": "SwiftRaydioSDK.LogDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "LogDelegate",
-                        "printedName": "any SwiftRaydioSDK.LogDelegate",
+                        "printedName": "SwiftRaydioSDK.LogDelegate",
                         "usr": "s:14SwiftRaydioSDK11LogDelegateP"
                       }
                     ],
@@ -7161,22 +6817,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
       }
     ],
@@ -7205,6 +6845,174 @@
       "value": "\"serialisation\""
     },
     {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/Data\/SessionDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 971,
+      "length": 76,
+      "value": "\"Unknown RTCSessionDescription type: \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/Data\/SessionDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 1046,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1505,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 1612,
+      "length": 69,
+      "value": "\"Reconnecting to previously listened Stream after streamer reconnect\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 1968,
+      "length": 18,
+      "value": "\"Reconnect failed\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 2522,
+      "length": 54,
+      "value": "\"Streamer from active stream has stopped broadcasting\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2768,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 3261,
+      "length": 49,
+      "value": "\"Stream not found in the list of current streams\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 3515,
+      "length": 35,
+      "value": "\"Start connecting to stream source\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 3653,
+      "length": 10,
+      "value": "\"listener\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 3679,
+      "length": 18,
+      "value": "\"listener-connect\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 3862,
+      "length": 21,
+      "value": "\"play-by-ear-user-id\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 3903,
+      "length": 14,
+      "value": "\"stream-token\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 3932,
+      "length": 6,
+      "value": "\"role\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 3940,
+      "length": 10,
+      "value": "\"LISTENER\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 3952,
+      "length": 10,
+      "value": "\"metadata\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 3965,
+      "length": 4,
+      "value": "\"os\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 3993,
+      "length": 8,
+      "value": "\"device\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 4018,
+      "length": 14,
+      "value": "\"country-code\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 4188,
+      "length": 21,
+      "value": "\"Connected to source\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "StringLiteral",
+      "offset": 4269,
+      "length": 37,
+      "value": "\"Starting to connect to audio stream\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4724,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4838,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4900,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
       "kind": "StringLiteral",
       "offset": 735,
@@ -7214,9 +7022,695 @@
     {
       "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
       "kind": "BooleanLiteral",
+      "offset": 846,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 873,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 882,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 901,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 923,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 945,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1352,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "StringLiteral",
+      "offset": 1520,
+      "length": 25,
+      "value": "\"Connection for socket: \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "StringLiteral",
+      "offset": 1566,
+      "length": 15,
+      "value": "\" changed to: \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "StringLiteral",
+      "offset": 2019,
+      "length": 9,
+      "value": "\"Socket \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "StringLiteral",
+      "offset": 2049,
+      "length": 16,
+      "value": "\" not connected\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2470,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "StringLiteral",
+      "offset": 2599,
+      "length": 8,
+      "value": "\"NO ACK\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2840,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3109,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "StringLiteral",
+      "offset": 3513,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "StringLiteral",
+      "offset": 4028,
+      "length": 29,
+      "value": "\"Starting to connect socket \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4121,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4133,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4161,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4177,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4199,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4221,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4476,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4753,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5135,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "StringLiteral",
+      "offset": 6286,
+      "length": 50,
+      "value": "\"Error in JSONSerialization or decoding: \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "StringLiteral",
+      "offset": 6335,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6714,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "BooleanLiteral",
       "offset": 6904,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7002,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7026,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7056,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Logging\/Internal\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 4536,
+      "length": 43,
+      "value": "\"[InformationLog] - Failed to seralise log\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Logging\/Internal\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 4613,
+      "length": 19,
+      "value": "\"[InformationLog] \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Logging\/Internal\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 4907,
+      "length": 37,
+      "value": "\"[ErrorLog] - Failed to seralise log\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Logging\/Internal\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 4978,
+      "length": 13,
+      "value": "\"[ErrorLog] \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Logging\/Internal\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 5277,
+      "length": 43,
+      "value": "\"[InteractionLog] - Failed to seralise log\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Logging\/Internal\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 5354,
+      "length": 19,
+      "value": "\"[InteractionLog] \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Logging\/Internal\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 5659,
+      "length": 43,
+      "value": "\"[InteractionLog] - Failed to seralise log\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Logging\/Internal\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 5736,
+      "length": 19,
+      "value": "\"[InteractionLog] \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1239,
+      "length": 28,
+      "value": "\"v1\/listener-init-transport\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1483,
+      "length": 59,
+      "value": "\"Failed in init Transport no further information available\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1558,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1913,
+      "length": 26,
+      "value": "\"Failed in init Transport\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1955,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "Array",
+      "offset": 3878,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "Array",
+      "offset": 3938,
+      "length": 33,
+      "value": "[\"stun:raydio.mycrocast.com:443\"]"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "Array",
+      "offset": 4029,
+      "length": 127,
+      "value": "[\"turn:raydio.mycrocast.com:443\", \"turn:raydio.mycrocast.com:443?transport=udp\", \"turn:raydio.mycrocast.com:443?transport=tcp\"]"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 4168,
+      "length": 11,
+      "value": "\"mycrocast\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 4193,
+      "length": 31,
+      "value": "\"MycrocastCoturnAuthentication\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 5141,
+      "length": 31,
+      "value": "\"v1\/listener-consume-transport\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 5387,
+      "length": 62,
+      "value": "\"Failed in consume Transport no further information available\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 5465,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 5852,
+      "length": 29,
+      "value": "\"Failed in consume Transport\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 5897,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 6165,
+      "length": 19,
+      "value": "\"Created transport\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 6509,
+      "length": 56,
+      "value": "\"Create transport threw error that is not media related\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 6722,
+      "length": 17,
+      "value": "\"Start consuming\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 7347,
+      "length": 56,
+      "value": "\"Create transport threw error that is not media related\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 7510,
+      "length": 17,
+      "value": "\"Consume success\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 7637,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 8326,
+      "length": 31,
+      "value": "\"Audio handshake failed with: \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 8490,
+      "length": 9,
+      "value": "\"timeout\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 8633,
+      "length": 55,
+      "value": "\"Failed to receive an answer from the backend. Timeout\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8824,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 8867,
+      "length": 15,
+      "value": "\"serialisation\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 8959,
+      "length": 43,
+      "value": "\"Failed to serialise the received response\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 9018,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9156,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 9199,
+      "length": 15,
+      "value": "\"not_connected\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 9351,
+      "length": 36,
+      "value": "\"The listen socket is not connected\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9526,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 9577,
+      "length": 11,
+      "value": "\"SFU Error\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 9622,
+      "length": 22,
+      "value": "\"Invalid_Stream_Token\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 9783,
+      "length": 46,
+      "value": "\"The provided stream token could not be found\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9974,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 10023,
+      "length": 11,
+      "value": "\"No_Stream\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 10173,
+      "length": 31,
+      "value": "\"The stream could not be found\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10349,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 10498,
+      "length": 53,
+      "value": "\"The following error was returned from the backend: \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10700,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10752,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 11365,
+      "length": 19,
+      "value": "\"On Connect called\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 11689,
+      "length": 31,
+      "value": "\"v1\/listener-connect-transport\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 11935,
+      "length": 62,
+      "value": "\"Failed in connect Transport no further information available\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 12013,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 12384,
+      "length": 62,
+      "value": "\"Failed in connect Transport no further information available\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 12462,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 12936,
+      "length": 41,
+      "value": "\"Connect returned false from the backend\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 13121,
+      "length": 40,
+      "value": "\"Audio Hanshake done. Audio now playing\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 13536,
+      "length": 40,
+      "value": "\"Connection state changed: disconnected\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/MediaSoup\/MediasoupPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 13811,
+      "length": 34,
+      "value": "\"Connection state changed: failed\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Root.swift",
+      "kind": "StringLiteral",
+      "offset": 1865,
+      "length": 6,
+      "value": "\"main\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Root.swift",
+      "kind": "StringLiteral",
+      "offset": 3005,
+      "length": 39,
+      "value": "\"Connect called when already connected\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Root.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3065,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Root.swift",
+      "kind": "StringLiteral",
+      "offset": 3235,
+      "length": 21,
+      "value": "\"play-by-ear-user-id\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Root.swift",
+      "kind": "StringLiteral",
+      "offset": 3276,
+      "length": 14,
+      "value": "\"target-token\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Root.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4584,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Config.swift",
@@ -7226,11 +7720,333 @@
       "value": "\"https:\/\/pbe.mycrocast.com\""
     },
     {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/User\/User.swift",
+      "kind": "StringLiteral",
+      "offset": 493,
+      "length": 14,
+      "value": "\"user-connect\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/User\/UserDefaults+Int.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 8,
+      "value": "\"userId\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/User\/UserDefaults+Int.swift",
+      "kind": "StringLiteral",
+      "offset": 417,
+      "length": 8,
+      "value": "\"userId\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/User\/UserDefaults+Int.swift",
+      "kind": "StringLiteral",
+      "offset": 536,
+      "length": 17,
+      "value": "\"playByEarUserId\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/User\/UserDefaults+Int.swift",
+      "kind": "StringLiteral",
+      "offset": 731,
+      "length": 17,
+      "value": "\"playByEarUserId\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/User\/UserDefaults+Int.swift",
+      "kind": "StringLiteral",
+      "offset": 848,
+      "length": 8,
+      "value": "\"clubId\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/User\/UserDefaults+Int.swift",
+      "kind": "StringLiteral",
+      "offset": 1066,
+      "length": 8,
+      "value": "\"clubId\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Data\/Livestream.swift",
+      "kind": "StringLiteral",
+      "offset": 396,
+      "length": 10,
+      "value": "\"stream: \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Data\/Livestream.swift",
+      "kind": "StringLiteral",
+      "offset": 520,
+      "length": 4,
+      "value": "\"-1\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Data\/Livestream.swift",
+      "kind": "BooleanLiteral",
+      "offset": 603,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Data\/Livestream.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1051,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/LiveStreamsContainer.swift",
+      "kind": "Array",
+      "offset": 602,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
       "kind": "Array",
       "offset": 821,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 3014,
+      "length": 20,
+      "value": "\"Requesting streams\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 3192,
+      "length": 20,
+      "value": "\"v1\/get-livestreams\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 3425,
+      "length": 60,
+      "value": "\"Failed to refresh streams no further information available\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 3501,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "Array",
+      "offset": 3528,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 3576,
+      "length": 9,
+      "value": "\"timeout\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 3666,
+      "length": 55,
+      "value": "\"Failed to receive an answer from the backend. Timeout\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 3737,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "Array",
+      "offset": 3764,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 3813,
+      "length": 15,
+      "value": "\"serialisation\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 3909,
+      "length": 43,
+      "value": "\"Failed to serialise the received response\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 3968,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "Array",
+      "offset": 3995,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 4044,
+      "length": 15,
+      "value": "\"not_connected\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 4140,
+      "length": 22,
+      "value": "\"Socket not connected\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 4178,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "Array",
+      "offset": 4205,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 4305,
+      "length": 27,
+      "value": "\"Failed to refresh streams\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 4348,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "Array",
+      "offset": 4371,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 4563,
+      "length": 11,
+      "value": "\"Received \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 4605,
+      "length": 10,
+      "value": "\" streams\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 4805,
+      "length": 25,
+      "value": "\"Stream was removed for \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 5048,
+      "length": 9,
+      "value": "\"Stream \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 5092,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 5117,
+      "length": 10,
+      "value": "\" updated\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 5315,
+      "length": 27,
+      "value": "\"A new stream was addded: \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 5364,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 6117,
+      "length": 13,
+      "value": "\"livestreams\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 6207,
+      "length": 19,
+      "value": "\"livestream-create\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 6296,
+      "length": 19,
+      "value": "\"livestream-update\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 6388,
+      "length": 19,
+      "value": "\"livestream-remove\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 6480,
+      "length": 17,
+      "value": "\"livestream-dead\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
+      "kind": "StringLiteral",
+      "offset": 6568,
+      "length": 14,
+      "value": "\"user-connect\""
     }
   ]
 }
