@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                 }
     s.author             = "mycrocast Gmbh"
     s.source       = { :git => "https://github.com/mycrocast/mycrocastSwitRaydioSDK.git", :tag => "1.25" }
-    s.vendored_frameworks = "SwiftRaydioSDK.xcframework", "deps/Mediasoup.xcframework", "deps/WebRTC.xcframework"
+    s.vendored_frameworks = "frameworks/SwiftRaydioSDK.xcframework", "deps/Mediasoup.xcframework", "deps/WebRTC.xcframework"
     s.dependency 'Socket.IO-Client-Swift', '~> 16.0'
     s.platform = :ios
     s.swift_version = "5.4"

@@ -12,7 +12,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SwiftRaydioSDKWrapper",
+            name: "SwiftRaydioSDK",
             targets: ["SwiftRaydioSDKWrapper"]
         )
     ],
@@ -23,7 +23,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/mycrocast/mycrocastSwiftMediasoup",
-            exact: "1.0.1"
+            exact: "1.0.3"
         ),
         .package(url: "https://github.com/mycrocast/mycrocastSwiftWebRTC.git", exact: "1.0.1")
     ],
