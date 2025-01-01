@@ -17,11 +17,11 @@ let package = Package(
             name: "Socket.IO-Client-Swift",
             url: "https://github.com/socketio/socket.io-client-swift",
             from: "16.0.0"
-        )
+        ),
     ],
     targets: [
         .binaryTarget(
-            name: "SwiftRaydioSDK",
+            name: "SwiftRaydioSDKBinary",
             path: "./SwiftRaydioSDK.xcframework"
         ),
         .binaryTarget(
@@ -31,6 +31,16 @@ let package = Package(
         .binaryTarget(
             name: "WebRTC",
             path: "./deps/WebRTC.xcframework"
-        )
+        ),
+        .target(
+                name: "SwiftRaydioSDK",
+                dependencies: [
+                    "SwiftRaydioSDKBinary",
+                    "Mediasoup",
+                    "WebRTC",
+                    .product(name: "SocketIO", package: "Socket.IO-Client-Swift")
+                ],
+                path: "./Sources/SwiftRaydioSDKWrapper" // This directory can be empty
+            )
     ]
 )
