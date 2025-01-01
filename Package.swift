@@ -12,7 +12,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SwiftRaydioSDK",
+            name: "SwiftRaydioSDKWrapper",
             targets: ["SwiftRaydioSDKWrapper"]
         )
     ],
@@ -30,7 +30,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SwiftRaydioSDK",
-            path: "./SwiftRaydioSDK.xcframework"
+            path: "SwiftRaydioSDK.xcframework"
         ),
         .target(
             name: "SwiftRaydioSDKWrapper",
@@ -40,7 +40,7 @@ let package = Package(
                 .product(name: "Mediasoup", package: "mycrocastSwiftMediasoup"),
                 .product(name: "WebRTC", package: "mycrocastSwiftWebRTC")
             ],
-            path: "./Sources/SwiftRaydioSDKWrapper"
+            path: "Sources/SwiftRaydioSDKWrapper"
         )
     ]
 )
