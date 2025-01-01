@@ -1,4 +1,5 @@
-// swift-tools-version:5.4
+// swift-tools-version: 5.7.2
+
 import PackageDescription
 
 let package = Package(
@@ -18,29 +19,12 @@ let package = Package(
             url: "https://github.com/socketio/socket.io-client-swift",
             from: "16.0.0"
         ),
+        .package(url: "https://github.com/mycrocast/mycrocastSwiftMediasoup", exact: "1.0.0")
     ],
     targets: [
         .binaryTarget(
-            name: "SwiftRaydioSDKBinary",
+            name: "SwiftRaydioSDK",
             path: "./SwiftRaydioSDK.xcframework"
-        ),
-        .binaryTarget(
-            name: "Mediasoup",
-            path: "./deps/Mediasoup.xcframework"
-        ),
-        .binaryTarget(
-            name: "WebRTC",
-            path: "./deps/WebRTC.xcframework"
-        ),
-        .target(
-                name: "SwiftRaydioSDK",
-                dependencies: [
-                    "SwiftRaydioSDKBinary",
-                    "Mediasoup",
-                    "WebRTC",
-                    .product(name: "SocketIO", package: "Socket.IO-Client-Swift")
-                ],
-                path: "./Sources/SwiftRaydioSDKWrapper" // This directory can be empty
-            )
+        )
     ]
 )
