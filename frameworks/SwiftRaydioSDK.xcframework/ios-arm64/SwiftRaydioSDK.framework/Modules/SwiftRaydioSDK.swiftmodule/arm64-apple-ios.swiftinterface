@@ -1,0 +1,192 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SwiftRaydioSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Combine
+import Foundation
+import Mediasoup
+import Swift
+@_exported import SwiftRaydioSDK
+import UIKit
+import WebRTC
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum WorkflowLogs : Swift.String, Swift.Encodable {
+  case connecting
+  case subscribing
+  case streams
+  case playing
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol ListenStateAccess : AnyObject {
+  var listenState$: Combine.AnyPublisher<SwiftRaydioSDK.RaydioPlayState, Swift.Never> { get }
+  var listenStateDelegate: (any SwiftRaydioSDK.ListenStateDelegate)? { get set }
+  func isListeningTo(_ streamToken: Swift.String) -> Swift.Bool
+}
+public protocol LogDelegate {
+  func onInformationLog(_ information: SwiftRaydioSDK.InformationLog)
+  func onErrorLog(_ error: SwiftRaydioSDK.ErrorLog)
+  func onInteractionLog(_ interaction: SwiftRaydioSDK.InteractionLog)
+  func onSystemErrorLog(_ systemError: SwiftRaydioSDK.SystemErrorLog)
+}
+public protocol RaydioSDKStateDelegate {
+  func onRaydioSDKStateChanged(_ state: SwiftRaydioSDK.RaydioSDKState)
+}
+public enum RaydioSDKState : Swift.Equatable {
+  case idle
+  case connected
+  case disconnected
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: SwiftRaydioSDK.RaydioSDKState, b: SwiftRaydioSDK.RaydioSDKState) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ErrorLog : Swift.Encodable {
+  public var workflow: SwiftRaydioSDK.WorkflowLogs
+  public var description: Swift.String
+  public var error: SwiftRaydioSDK.RaydioError
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct InformationLog : Swift.Encodable {
+  public var workflow: SwiftRaydioSDK.WorkflowLogs
+  public var description: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class RaydioSDK {
+  public static let shared: SwiftRaydioSDK.RaydioSDK
+  public func start(_ token: Swift.String) -> any SwiftRaydioSDK.MycrocastRaydioSDK
+  @objc deinit
+}
+public enum RaydioPlayState : Swift.Equatable {
+  case playing
+  case idle
+  case connecting
+  case failed(error: SwiftRaydioSDK.RaydioError)
+  case paused
+  case disconnected
+  public static func == (a: SwiftRaydioSDK.RaydioPlayState, b: SwiftRaydioSDK.RaydioPlayState) -> Swift.Bool
+}
+public protocol SDKStateAccess : AnyObject {
+  var sdkState$: Combine.AnyPublisher<SwiftRaydioSDK.RaydioSDKState, Swift.Never> { get }
+  var skdStateDelegate: (any SwiftRaydioSDK.RaydioSDKStateDelegate)? { get set }
+}
+public struct InteractionLog : Swift.Encodable {
+  public var type: SwiftRaydioSDK.InteractionType
+  public var stream: SwiftRaydioSDK.MycrocastStream
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum InteractionType : Swift.Encodable {
+  case play
+  case pause
+  public static func == (a: SwiftRaydioSDK.InteractionType, b: SwiftRaydioSDK.InteractionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum RaydioError : Swift.Equatable, Swift.Error, Swift.Encodable {
+  case NOT_SUBSCRIBED
+  case STREAM_NOT_FOUND(streamId: Swift.String)
+  case LISTEN_FAILED(streamId: Swift.String, reason: SwiftRaydioSDK.ListenFailedReason)
+  case INTERNAL(description: Swift.String)
+  public static func == (a: SwiftRaydioSDK.RaydioError, b: SwiftRaydioSDK.RaydioError) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum ListenFailedReason : Swift.Encodable {
+  case connection
+  case timeout
+  case handshakeFailure
+  case noStream
+  case unknown
+  case serverSideFailure
+  public static func == (a: SwiftRaydioSDK.ListenFailedReason, b: SwiftRaydioSDK.ListenFailedReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol ErrorDelegate {
+  func onRaydioError(_ error: SwiftRaydioSDK.RaydioError)
+}
+public protocol ListenStateDelegate {
+  func onListenStageChanged(_ playState: SwiftRaydioSDK.RaydioPlayState)
+}
+public protocol ErrorAccess {
+  var error$: Combine.AnyPublisher<SwiftRaydioSDK.RaydioError, Swift.Never> { get }
+  var errorDelegate: (any SwiftRaydioSDK.ErrorDelegate)? { get set }
+}
+public struct SystemErrorLog : Swift.Encodable {
+  public var workflow: SwiftRaydioSDK.WorkflowLogs
+  public var description: Swift.String
+  public var error: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct MycrocastStream : Swift.Encodable {
+  public var language: Swift.String
+  public var streamId: Swift.String
+  public var isMuted: Swift.Bool
+  public var matchId: Swift.String
+  public var title: Swift.String
+  public var connectionIssues: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public protocol StreamsAccess : AnyObject {
+  var streams: [SwiftRaydioSDK.MycrocastStream] { get }
+  var streams$: Combine.AnyPublisher<[SwiftRaydioSDK.MycrocastStream], Swift.Never> { get }
+  var streamAdded$: Combine.AnyPublisher<SwiftRaydioSDK.MycrocastStream, Swift.Never> { get }
+  var streamRemoved$: Combine.AnyPublisher<SwiftRaydioSDK.MycrocastStream, Swift.Never> { get }
+  var streamUpdated$: Combine.AnyPublisher<SwiftRaydioSDK.MycrocastStream, Swift.Never> { get }
+  var streamsDelegate: (any SwiftRaydioSDK.StreamsDelegate)? { get set }
+}
+public struct Language : Swift.Decodable {
+  public var native: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol MycrocastRaydioSDK {
+  var activeStream: Swift.String? { get }
+  var streamsAccess: any SwiftRaydioSDK.StreamsAccess { get }
+  var logAccess: any SwiftRaydioSDK.LogAccess { get }
+  var listenStateAccess: any SwiftRaydioSDK.ListenStateAccess { get }
+  var sdkStateAccess: any SwiftRaydioSDK.SDKStateAccess { get }
+  var errorAccess: any SwiftRaydioSDK.ErrorAccess { get }
+  func connect() async -> Swift.Bool
+  func reconnectAudio() async -> SwiftRaydioSDK.ListenFailedReason?
+  func playStream(_ streamId: Swift.String) async -> SwiftRaydioSDK.ListenFailedReason?
+  func pauseCurrentStream()
+  func onConnectionLost()
+  func onConnectionReestablished() async -> Swift.Bool
+  func onBackgroundEntered()
+  func onForegroundEntered() async -> Swift.Bool
+  func isPlaying(_ streamId: Swift.String) -> Swift.Bool
+  func refreshStreams() async -> [SwiftRaydioSDK.MycrocastStream]
+}
+public protocol StreamsDelegate {
+  func onStreamAdded(_ stream: SwiftRaydioSDK.MycrocastStream)
+  func onStreamRemoved(_ stream: SwiftRaydioSDK.MycrocastStream)
+  func onStreamUpdated(_ stream: SwiftRaydioSDK.MycrocastStream)
+  func onStreamListChanged(_ streams: [SwiftRaydioSDK.MycrocastStream])
+}
+public protocol LogAccess : AnyObject {
+  var informationLog$: Combine.AnyPublisher<SwiftRaydioSDK.InformationLog, Swift.Never> { get }
+  var errorLog$: Combine.AnyPublisher<SwiftRaydioSDK.ErrorLog, Swift.Never> { get }
+  var interactionLog$: Combine.AnyPublisher<SwiftRaydioSDK.InteractionLog, Swift.Never> { get }
+  var systemErrorLog$: Combine.AnyPublisher<SwiftRaydioSDK.SystemErrorLog, Swift.Never> { get }
+  var jsonLog$: Combine.AnyPublisher<Swift.String, Swift.Never> { get }
+  var logDelegate: (any SwiftRaydioSDK.LogDelegate)? { get set }
+}
+extension SwiftRaydioSDK.WorkflowLogs : Swift.Equatable {}
+extension SwiftRaydioSDK.WorkflowLogs : Swift.Hashable {}
+extension SwiftRaydioSDK.WorkflowLogs : Swift.RawRepresentable {}
+extension SwiftRaydioSDK.RaydioSDKState : Swift.Hashable {}
+extension SwiftRaydioSDK.InteractionType : Swift.Equatable {}
+extension SwiftRaydioSDK.InteractionType : Swift.Hashable {}
+extension SwiftRaydioSDK.ListenFailedReason : Swift.Equatable {}
+extension SwiftRaydioSDK.ListenFailedReason : Swift.Hashable {}

@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SwiftRaydioSDK",
+            name: "swiftRaydioSDK",
             targets: ["SwiftRaydioSDK"]
         )
     ],
@@ -24,7 +24,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SwiftRaydioSDK",
-            path: "SwiftRaydioSDK.xcframework"
+            path: "frameworks/SwiftRaydioSDK.xcframework"
         )
     ]
 )
