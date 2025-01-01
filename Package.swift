@@ -19,7 +19,9 @@ let package = Package(
             url: "https://github.com/socketio/socket.io-client-swift",
             from: "16.0.0"
         ),
-        .package(url: "https://github.com/mycrocast/mycrocastSwiftMediasoup", exact: "1.0.1")
+        .package(url: "https://github.com/mycrocast/mycrocastSwiftMediasoup", exact: "1.0.2"),
+        .package(url: "https://github.com/mycrocast/mycrocastSwiftWebRTC.git", exact: "1.0.1"),
+        
     ],
     targets: [
         .binaryTarget(
@@ -28,3 +30,5 @@ let package = Package(
         )
     ]
 )
+
+
