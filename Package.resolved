@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mycrocast/mycrocastSwiftMediasoup",
       "state" : {
-        "revision" : "aca59d80bfdee5c27f84c64d4964248368a0748a",
-        "version" : "1.0.2"
+        "revision" : "e14e10f080e254fb56d0eef99beb5e21daf2d96f",
+        "version" : "1.0.1"
       }
     },
     {
