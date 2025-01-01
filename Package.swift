@@ -30,7 +30,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SwiftRaydioSDK",
-            path: "SwiftRaydioSDK.xcframework"
+            path: "frameworks/SwiftRaydioSDK.xcframework"
         ),
         .target(
             name: "SwiftRaydioSDKWrapper",
