@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Raydio SDK  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="Raydio SDK  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" alt=""/>
+        Raydio SDK  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="accessibility.html">Accessibility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="connecting-to-the-backend-and-receivng-the-streams.html">Connecting to the backend and receivng the streams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="errorhandling.html">ErrorHandling</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="how-to-start-a-stream.html">How to start a stream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="listening_to_a_stream.html">Listening_to_a_stream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="logging.html">Logging</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="observing-background-state-and-network.html">Observing background state and network</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="raydio-sdk.html">Raydio SDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="general_information.html">general_information</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/RaydioSDK.html">RaydioSDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/InteractionType.html">InteractionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/RaydioError.html">RaydioError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/RaydioPlayState.html">RaydioPlayState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/RaydioSDKState.html">RaydioSDKState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/WebsocketConnectionState.html">WebsocketConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/WorkflowLogs.html">WorkflowLogs</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions.html#/s:14SwiftRaydioSDK15MediaSoupPlayerC">MediaSoupPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Websocket.html">Websocket</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/ErrorDelegate.html">ErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/InjectionKey.html">InjectionKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ListenStateDelegate.html">ListenStateDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/LogDelegate.html">LogDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/RaydioSDKStateDelegate.html">RaydioSDKStateDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/StreamGroupDelegate.html">StreamGroupDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/StreamsProviding.html">StreamsProviding</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:14SwiftRaydioSDK8ErrorLogV">ErrorLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:14SwiftRaydioSDK14InformationLogV">InformationLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:14SwiftRaydioSDK14InteractionLogV">InteractionLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Language.html">Language</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Livestream.html">Livestream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/StreamGroup.html">StreamGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/StreamGroupEntry.html">StreamGroupEntry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:14SwiftRaydioSDK14SystemErrorLogV">SystemErrorLog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='raydio-sdk' class='heading'>Raydio SDK</h1>
+
+<p>This SDK will enable you to easily integrate listening to streams created via the mycrocast platform.</p>
+
+<p>Certain things however are left for the developer to do and will be detailed further below.</p>
+
+<p>[TOC]</p>
+<h2 id='getting-started' class='heading'>Getting started</h2>
+
+<p>To get started install the SDK via Cocoapods.</p>
+
+<p>Import the SDK</p>
+
+<p><code>import SwiftRaydioSDK</code></p>
+
+<p>After importing the source call the start function of the shared Instance providing the <strong>clubId</strong> and <strong>apiToken</strong> </p>
+<pre class="highlight swift"><code><span class="kt">RaydioSDK</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">start</span><span class="p">(</span><span class="n">clubId</span><span class="p">,</span> <span class="nv">apiToken</span><span class="p">:</span> <span class="n">apiToken</span><span class="p">)</span>
+</code></pre>
+
+<p>You will get the clubId and apiToken after registration from us.</p>
+
+<p>Calling the <code>start</code> function will return <code><a href="Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a></code>store this somewhere as member variable because you will work only with this class from now on.</p>
+<h3 id='next-steps' class='heading'>Next Steps:</h3>
+
+<p>The SDK is now configured and you can start to connect to the backend to receive the streams and listen to the stream.</p>
+
+<p>The following topics will be disccued next:</p>
+
+<ul>
+<li><p><a href="connecting.html">Connecting to the backend and Receiving Streams</a></p></li>
+<li><p><a href="Listening_to_a_stream.html">Playing streams</a></p></li>
+<li><p><a href="logging.html">Logging</a></p></li>
+<li><p><a href="network_app_change.html">Network and App State changes</a></p></li>
+<li><p><a href="error_handling.html">Error handling</a></p></li>
+<li><p><a href="accessibility.html">Accessibility considerations</a></p></li>
+</ul>
+
+<p>Everything can be seen in the implementation except for the accessibility and NowPlaying of the &ldquo;Playing a stream&rdquo; part</p>
+
+<p>The example is not production ready from the code strucutre and quality of the code but displays all parts of the sdk in usage.</p>
+<h2 id='example' class='heading'>Example</h2>
+
+<p>The following is the complete model of the example app just copy pasted without much comments. This should provide enough information to estimate the effort. </p>
+
+<p>This is not production ready could and should probably be split in multiple classes.</p>
+
+<p>The example displays each stream separatly therefore the group is flattenend.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Foundation</span>
+<span class="kd">import</span> <span class="kt">SwiftUI</span>
+<span class="kd">import</span> <span class="kt">SwiftRaydioSDK</span>
+<span class="kd">import</span> <span class="kt">Combine</span>
+<span class="kd">import</span> <span class="kt">AVFoundation</span><span class="p">;</span>
+<span class="kd">import</span> <span class="kt">MediaPlayer</span>
+
+<span class="kd">class</span> <span class="kt">MainModel</span><span class="p">:</span> <span class="kt">ObservableObject</span> <span class="p">{</span>
+
+    <span class="c1">/// used to observe network changes</span>
+    <span class="kd">@Injected</span><span class="p">(\</span><span class="o">.</span><span class="n">networkMonitor</span><span class="p">)</span>
+    <span class="kd">private</span> <span class="k">var</span> <span class="nv">networkMonitor</span><span class="p">:</span> <span class="kt">NetworkMonitorProviding</span>
+
+    <span class="kd">private</span> <span class="k">var</span> <span class="nv">cancelable</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyCancellable</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">var</span> <span class="nv">groups</span><span class="p">:</span> <span class="p">[</span><span class="kt">StreamGroup</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="kd">@Published</span>
+    <span class="k">var</span> <span class="nv">streams</span><span class="p">:</span> <span class="p">[</span><span class="kt">Stream</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="kd">@Published</span>
+    <span class="k">var</span> <span class="nv">activeStream</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+
+    <span class="k">var</span> <span class="nv">sdk</span><span class="p">:</span> <span class="kt">RaydioSDKProviding</span>
+
+    <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">sdk</span> <span class="o">=</span> <span class="kt">RaydioSDK</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">start</span><span class="p">(</span><span class="mi">235617</span><span class="p">,</span> <span class="nv">apiToken</span><span class="p">:</span> <span class="s">""</span><span class="p">)</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="n">sdkStateDelegate</span> <span class="o">=</span> <span class="k">self</span>
+
+        <span class="k">var</span> <span class="nv">streams</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="n">raydioStreams</span>
+        <span class="n">streams</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="n">logDelegate</span> <span class="o">=</span> <span class="k">self</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="n">listenerStateDelegate</span> <span class="o">=</span> <span class="k">self</span>
+
+        <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">connect</span><span class="p">()</span>
+
+        <span class="k">self</span><span class="o">.</span><span class="n">networkMonitor</span><span class="o">.</span><span class="n">networkChanged</span><span class="err">$</span>
+            <span class="o">.</span><span class="n">sink</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span>
+            <span class="n">networkAvailable</span> <span class="k">in</span>
+                <span class="k">if</span> <span class="k">let</span> <span class="nv">this</span> <span class="o">=</span> <span class="k">self</span> <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">networkAvailable</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">this</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">onConnectionReestablished</span><span class="p">()</span>
+                        <span class="k">return</span>
+                    <span class="p">}</span>
+                    <span class="n">this</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">onConnectionLost</span><span class="p">()</span>
+                <span class="p">}</span>
+
+            <span class="p">}</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="nv">in</span><span class="p">:</span> <span class="o">&amp;</span><span class="k">self</span><span class="o">.</span><span class="n">cancelable</span><span class="p">)</span>
+    <span class="p">}</span>
+
+
+    <span class="kd">func</span> <span class="nf">onAppear</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="n">skdState</span> <span class="o">==</span> <span class="o">.</span><span class="n">connected</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">requestStreams</span><span class="p">()</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">private</span> <span class="kd">func</span> <span class="nf">convertGroupsToStream</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="k">async</span> <span class="p">{</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">streams</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">group</span> <span class="k">in</span> <span class="k">self</span><span class="o">.</span><span class="n">groups</span> <span class="p">{</span>
+                <span class="k">for</span> <span class="n">entry</span> <span class="k">in</span> <span class="n">group</span><span class="o">.</span><span class="n">entries</span> <span class="p">{</span>
+                    <span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="kt">Stream</span><span class="p">(</span><span class="nv">streamId</span><span class="p">:</span> <span class="n">entry</span><span class="o">.</span><span class="n">streamId</span><span class="p">,</span> <span class="nv">muted</span><span class="p">:</span> <span class="n">entry</span><span class="o">.</span><span class="n">isMuted</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="n">group</span><span class="o">.</span><span class="n">title</span><span class="p">,</span> <span class="nv">language</span><span class="p">:</span> <span class="n">entry</span><span class="o">.</span><span class="n">language</span><span class="p">)</span>
+                    <span class="k">self</span><span class="o">.</span><span class="n">streams</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">onWentToBackground</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">onBackgroundEntered</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">onWentToForeground</span><span class="p">()</span> <span class="p">{</span>
+     <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">onForegroundEntered</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">private</span> <span class="kd">func</span> <span class="nf">configureAudioSession</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">do</span> <span class="p">{</span>
+            <span class="k">try</span> <span class="kt">AVAudioSession</span><span class="o">.</span><span class="nf">sharedInstance</span><span class="p">()</span><span class="o">.</span><span class="nf">setCategory</span><span class="p">(</span><span class="o">.</span><span class="n">playback</span><span class="p">)</span>
+            <span class="k">try</span> <span class="kt">AVAudioSession</span><span class="o">.</span><span class="nf">sharedInstance</span><span class="p">()</span><span class="o">.</span><span class="nf">setActive</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">onStreamPressed</span><span class="p">(</span><span class="n">_</span> <span class="nv">streamId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">self</span><span class="o">.</span><span class="nf">configureAudioSession</span><span class="p">()</span>
+        <span class="k">if</span> <span class="k">let</span> <span class="nv">activeStream</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="n">activeStream</span> <span class="p">{</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">pause</span><span class="p">()</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">activeStream</span> <span class="o">=</span> <span class="kc">nil</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">activeStream</span> <span class="o">==</span> <span class="n">streamId</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">activeStream</span> <span class="o">=</span> <span class="n">streamId</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">play</span><span class="p">(</span><span class="n">streamId</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// react to receiving streams and updates to streams</span>
+<span class="kd">extension</span> <span class="kt">MainModel</span><span class="p">:</span> <span class="kt">StreamGroupDelegate</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">onNewGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt">SwiftRaydioSDK</span><span class="o">.</span><span class="kt">StreamGroup</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="k">async</span> <span class="p">{</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">groups</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+            <span class="k">self</span><span class="o">.</span><span class="nf">convertGroupsToStream</span><span class="p">()</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">onGroupUpdated</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt">SwiftRaydioSDK</span><span class="o">.</span><span class="kt">StreamGroup</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="k">async</span> <span class="p">{</span>
+            <span class="k">let</span> <span class="nv">index</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="n">groups</span><span class="o">.</span><span class="n">firstIndex</span> <span class="p">{</span>
+                <span class="n">element</span> <span class="k">in</span>
+                <span class="k">return</span> <span class="n">group</span><span class="o">.</span><span class="n">title</span> <span class="o">==</span> <span class="n">element</span><span class="o">.</span><span class="n">title</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="k">let</span> <span class="nv">index</span> <span class="o">=</span> <span class="n">index</span> <span class="p">{</span>
+                <span class="k">self</span><span class="o">.</span><span class="n">groups</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">group</span>
+                <span class="k">self</span><span class="o">.</span><span class="nf">convertGroupsToStream</span><span class="p">()</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">onGroupRemoved</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt">SwiftRaydioSDK</span><span class="o">.</span><span class="kt">StreamGroup</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="k">async</span> <span class="p">{</span>
+            <span class="k">let</span> <span class="nv">index</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="n">groups</span><span class="o">.</span><span class="n">firstIndex</span> <span class="p">{</span>
+                <span class="n">element</span> <span class="k">in</span>
+                <span class="k">return</span> <span class="n">group</span><span class="o">.</span><span class="n">title</span> <span class="o">==</span> <span class="n">element</span><span class="o">.</span><span class="n">title</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="k">let</span> <span class="nv">index</span> <span class="o">=</span> <span class="n">index</span> <span class="p">{</span>
+                <span class="k">self</span><span class="o">.</span><span class="n">groups</span><span class="o">.</span><span class="nf">remove</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span> <span class="n">index</span><span class="p">)</span>
+                <span class="k">self</span><span class="o">.</span><span class="nf">convertGroupsToStream</span><span class="p">()</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">onGroupsReceived</span><span class="p">(</span><span class="n">_</span> <span class="nv">groups</span><span class="p">:</span> <span class="p">[</span><span class="kt">SwiftRaydioSDK</span><span class="o">.</span><span class="kt">StreamGroup</span><span class="p">])</span> <span class="p">{</span>
+        <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="k">async</span> <span class="p">{</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">groups</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">()</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">groups</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="nv">contentsOf</span><span class="p">:</span> <span class="n">groups</span><span class="p">)</span>
+            <span class="k">self</span><span class="o">.</span><span class="nf">convertGroupsToStream</span><span class="p">()</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// here you could log the logs provided by the sdk</span>
+<span class="kd">extension</span> <span class="kt">MainModel</span><span class="p">:</span> <span class="kt">LogDelegate</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">onSystemErrorLog</span><span class="p">(</span><span class="n">_</span> <span class="nv">systemError</span><span class="p">:</span> <span class="kt">SwiftRaydioSDK</span><span class="o">.</span><span class="kt">SystemErrorLog</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">systemError</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">onInformationLog</span><span class="p">(</span><span class="n">_</span> <span class="nv">information</span><span class="p">:</span> <span class="kt">SwiftRaydioSDK</span><span class="o">.</span><span class="kt">InformationLog</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">information</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">onErrorLog</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">SwiftRaydioSDK</span><span class="o">.</span><span class="kt">ErrorLog</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">onInteractionLog</span><span class="p">(</span><span class="n">_</span> <span class="nv">interaction</span><span class="p">:</span> <span class="kt">SwiftRaydioSDK</span><span class="o">.</span><span class="kt">InteractionLog</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">interaction</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// react to listen state changes</span>
+<span class="c1">// you could update now playing</span>
+<span class="c1">// update the ui and so on</span>
+<span class="kd">extension</span> <span class="kt">MainModel</span><span class="p">:</span> <span class="kt">ListenStateDelegate</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">onListenStageChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">playState</span><span class="p">:</span> <span class="kt">SwiftRaydioSDK</span><span class="o">.</span><span class="kt">RaydioPlayState</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">playState</span> <span class="o">==</span> <span class="o">.</span><span class="n">playing</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="k">async</span> <span class="p">{</span>
+                <span class="k">self</span><span class="o">.</span><span class="n">activeStream</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="n">activeStream</span>
+                <span class="k">self</span><span class="o">.</span><span class="nf">setupRemoteControl</span><span class="p">()</span>
+
+                <span class="k">var</span> <span class="nv">nowPlaying</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]()</span>
+                <span class="n">nowPlaying</span><span class="p">[</span><span class="kt">MPMediaItemPropertyTitle</span><span class="p">]</span> <span class="o">=</span> <span class="s">"Here could be the title of the stream"</span>
+                <span class="n">nowPlaying</span><span class="p">[</span><span class="kt">MPNowPlayingInfoPropertyIsLiveStream</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+
+                <span class="kt">MPNowPlayingInfoCenter</span><span class="o">.</span><span class="nf">default</span><span class="p">()</span><span class="o">.</span><span class="n">nowPlayingInfo</span> <span class="o">=</span> <span class="n">nowPlaying</span>
+            <span class="p">}</span>
+
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">playState</span> <span class="o">!=</span> <span class="o">.</span><span class="n">playing</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="k">async</span> <span class="p">{</span>
+                <span class="k">self</span><span class="o">.</span><span class="n">activeStream</span> <span class="o">=</span> <span class="kc">nil</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">private</span> <span class="kd">func</span> <span class="nf">setupRemoteControl</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">remote</span> <span class="o">=</span> <span class="kt">MPRemoteCommandCenter</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span>
+        <span class="n">remote</span><span class="o">.</span><span class="n">pauseCommand</span><span class="o">.</span><span class="n">addTarget</span> <span class="p">{</span> <span class="p">[</span><span class="k">unowned</span> <span class="k">self</span><span class="p">]</span>  <span class="n">event</span> <span class="k">in</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">pause</span><span class="p">()</span>
+            <span class="k">return</span> <span class="o">.</span><span class="n">success</span>
+        <span class="p">}</span>
+
+        <span class="n">remote</span><span class="o">.</span><span class="n">playCommand</span><span class="o">.</span><span class="n">addTarget</span> <span class="p">{</span> <span class="p">[</span><span class="k">unowned</span> <span class="k">self</span><span class="p">]</span> <span class="n">event</span> <span class="k">in</span>
+            <span class="k">if</span> <span class="k">let</span> <span class="nv">activeStream</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="n">activeStream</span> <span class="p">{</span>
+                <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">play</span><span class="p">(</span><span class="n">activeStream</span><span class="p">)</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="o">.</span><span class="n">success</span>
+        <span class="p">}</span>
+
+        <span class="n">remote</span><span class="o">.</span><span class="n">seekForwardCommand</span><span class="o">.</span><span class="n">isEnabled</span> <span class="o">=</span> <span class="kc">false</span>
+        <span class="n">remote</span><span class="o">.</span><span class="n">seekBackwardCommand</span><span class="o">.</span><span class="n">isEnabled</span> <span class="o">=</span> <span class="kc">false</span>
+        <span class="n">remote</span><span class="o">.</span><span class="n">nextTrackCommand</span><span class="o">.</span><span class="n">isEnabled</span> <span class="o">=</span> <span class="kc">false</span>
+        <span class="n">remote</span><span class="o">.</span><span class="n">previousTrackCommand</span><span class="o">.</span><span class="n">isEnabled</span> <span class="o">=</span> <span class="kc">false</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// listen to state changes of the sdk</span>
+<span class="c1">// when the sdk is connected, request the streams</span>
+<span class="c1">// when the disconnect state occurs and network is available, reconnect</span>
+<span class="kd">extension</span> <span class="kt">MainModel</span><span class="p">:</span> <span class="kt">RaydioSDKStateDelegate</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">onRaydioSDKStateChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">SwiftRaydioSDK</span><span class="o">.</span><span class="kt">RaydioSDKState</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">state</span> <span class="o">==</span> <span class="o">.</span><span class="n">connected</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">requestStreams</span><span class="p">()</span>
+            <span class="k">return</span>
+        <span class="p">}</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">state</span> <span class="o">==</span> <span class="o">.</span><span class="n">disconnected</span> <span class="o">&amp;&amp;</span> <span class="k">self</span><span class="o">.</span><span class="n">networkMonitor</span><span class="o">.</span><span class="n">networkAvailable</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">sdk</span><span class="o">.</span><span class="nf">reconnect</span><span class="p">()</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='current-shortcomings' class='heading'>Current shortcomings</h2>
+<h3 id='matchid' class='heading'>MatchId</h3>
+
+<p>Currently the provided matchId is always just &ldquo;0&rdquo;. This will change in the future update for our webplatform and backend but does not require any updates from the SDK</p>
+<h3 id='group-creation' class='heading'>Group creation</h3>
+
+<p>Currently to make a stream with multiple entries in the same stream, the title must match exactly. See (Link).</p>
+
+<p>An update from our Frontend will change the stream start process where the streamer just needs to select the language and game. This will follow shortly and again does not require any updates to the SDK.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-02-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
