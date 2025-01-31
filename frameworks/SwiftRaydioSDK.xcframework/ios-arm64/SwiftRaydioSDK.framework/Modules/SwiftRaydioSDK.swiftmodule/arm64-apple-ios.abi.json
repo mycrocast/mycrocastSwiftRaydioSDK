@@ -679,36 +679,6 @@
           },
           {
             "kind": "Function",
-            "name": "onInteractionLog",
-            "printedName": "onInteractionLog(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InteractionLog",
-                "printedName": "SwiftRaydioSDK.InteractionLog",
-                "usr": "s:14SwiftRaydioSDK14InteractionLogV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14SwiftRaydioSDK11LogDelegateP013onInteractionD0yyAA0gD0VF",
-            "mangledName": "$s14SwiftRaydioSDK11LogDelegateP013onInteractionD0yyAA0gD0VF",
-            "moduleName": "SwiftRaydioSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftRaydioSDK.LogDelegate>",
-            "sugared_genericSig": "<Self where Self : SwiftRaydioSDK.LogDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "onSystemErrorLog",
             "printedName": "onSystemErrorLog(_:)",
             "children": [
@@ -727,6 +697,36 @@
             "declKind": "Func",
             "usr": "s:14SwiftRaydioSDK11LogDelegateP013onSystemErrorD0yyAA0ghD0VF",
             "mangledName": "$s14SwiftRaydioSDK11LogDelegateP013onSystemErrorD0yyAA0ghD0VF",
+            "moduleName": "SwiftRaydioSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftRaydioSDK.LogDelegate>",
+            "sugared_genericSig": "<Self where Self : SwiftRaydioSDK.LogDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onJsonLog",
+            "printedName": "onJsonLog(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14SwiftRaydioSDK11LogDelegateP06onJsonD0yySSF",
+            "mangledName": "$s14SwiftRaydioSDK11LogDelegateP06onJsonD0yySSF",
             "moduleName": "SwiftRaydioSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : SwiftRaydioSDK.LogDelegate>",
             "sugared_genericSig": "<Self where Self : SwiftRaydioSDK.LogDelegate>",
@@ -2552,498 +2552,6 @@
         "moduleName": "SwiftRaydioSDK",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SwiftRaydioSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "InteractionLog",
-        "printedName": "InteractionLog",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "type",
-            "printedName": "type",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "InteractionType",
-                "printedName": "SwiftRaydioSDK.InteractionType",
-                "usr": "s:14SwiftRaydioSDK15InteractionTypeO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14SwiftRaydioSDK14InteractionLogV4typeAA0D4TypeOvp",
-            "mangledName": "$s14SwiftRaydioSDK14InteractionLogV4typeAA0D4TypeOvp",
-            "moduleName": "SwiftRaydioSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InteractionType",
-                    "printedName": "SwiftRaydioSDK.InteractionType",
-                    "usr": "s:14SwiftRaydioSDK15InteractionTypeO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14SwiftRaydioSDK14InteractionLogV4typeAA0D4TypeOvg",
-                "mangledName": "$s14SwiftRaydioSDK14InteractionLogV4typeAA0D4TypeOvg",
-                "moduleName": "SwiftRaydioSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InteractionType",
-                    "printedName": "SwiftRaydioSDK.InteractionType",
-                    "usr": "s:14SwiftRaydioSDK15InteractionTypeO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14SwiftRaydioSDK14InteractionLogV4typeAA0D4TypeOvs",
-                "mangledName": "$s14SwiftRaydioSDK14InteractionLogV4typeAA0D4TypeOvs",
-                "moduleName": "SwiftRaydioSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14SwiftRaydioSDK14InteractionLogV4typeAA0D4TypeOvM",
-                "mangledName": "$s14SwiftRaydioSDK14InteractionLogV4typeAA0D4TypeOvM",
-                "moduleName": "SwiftRaydioSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "stream",
-            "printedName": "stream",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MycrocastStream",
-                "printedName": "SwiftRaydioSDK.MycrocastStream",
-                "usr": "s:14SwiftRaydioSDK15MycrocastStreamV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14SwiftRaydioSDK14InteractionLogV6streamAA15MycrocastStreamVvp",
-            "mangledName": "$s14SwiftRaydioSDK14InteractionLogV6streamAA15MycrocastStreamVvp",
-            "moduleName": "SwiftRaydioSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MycrocastStream",
-                    "printedName": "SwiftRaydioSDK.MycrocastStream",
-                    "usr": "s:14SwiftRaydioSDK15MycrocastStreamV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14SwiftRaydioSDK14InteractionLogV6streamAA15MycrocastStreamVvg",
-                "mangledName": "$s14SwiftRaydioSDK14InteractionLogV6streamAA15MycrocastStreamVvg",
-                "moduleName": "SwiftRaydioSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MycrocastStream",
-                    "printedName": "SwiftRaydioSDK.MycrocastStream",
-                    "usr": "s:14SwiftRaydioSDK15MycrocastStreamV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14SwiftRaydioSDK14InteractionLogV6streamAA15MycrocastStreamVvs",
-                "mangledName": "$s14SwiftRaydioSDK14InteractionLogV6streamAA15MycrocastStreamVvs",
-                "moduleName": "SwiftRaydioSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14SwiftRaydioSDK14InteractionLogV6streamAA15MycrocastStreamVvM",
-                "mangledName": "$s14SwiftRaydioSDK14InteractionLogV6streamAA15MycrocastStreamVvM",
-                "moduleName": "SwiftRaydioSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14SwiftRaydioSDK14InteractionLogV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s14SwiftRaydioSDK14InteractionLogV6encode2toys7Encoder_p_tKF",
-            "moduleName": "SwiftRaydioSDK",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:14SwiftRaydioSDK14InteractionLogV",
-        "mangledName": "$s14SwiftRaydioSDK14InteractionLogV",
-        "moduleName": "SwiftRaydioSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "InteractionType",
-        "printedName": "InteractionType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "play",
-            "printedName": "play",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SwiftRaydioSDK.InteractionType.Type) -> SwiftRaydioSDK.InteractionType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InteractionType",
-                    "printedName": "SwiftRaydioSDK.InteractionType",
-                    "usr": "s:14SwiftRaydioSDK15InteractionTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SwiftRaydioSDK.InteractionType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InteractionType",
-                        "printedName": "SwiftRaydioSDK.InteractionType",
-                        "usr": "s:14SwiftRaydioSDK15InteractionTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:14SwiftRaydioSDK15InteractionTypeO4playyA2CmF",
-            "mangledName": "$s14SwiftRaydioSDK15InteractionTypeO4playyA2CmF",
-            "moduleName": "SwiftRaydioSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "pause",
-            "printedName": "pause",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SwiftRaydioSDK.InteractionType.Type) -> SwiftRaydioSDK.InteractionType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InteractionType",
-                    "printedName": "SwiftRaydioSDK.InteractionType",
-                    "usr": "s:14SwiftRaydioSDK15InteractionTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SwiftRaydioSDK.InteractionType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InteractionType",
-                        "printedName": "SwiftRaydioSDK.InteractionType",
-                        "usr": "s:14SwiftRaydioSDK15InteractionTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:14SwiftRaydioSDK15InteractionTypeO5pauseyA2CmF",
-            "mangledName": "$s14SwiftRaydioSDK15InteractionTypeO5pauseyA2CmF",
-            "moduleName": "SwiftRaydioSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InteractionType",
-                "printedName": "SwiftRaydioSDK.InteractionType",
-                "usr": "s:14SwiftRaydioSDK15InteractionTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InteractionType",
-                "printedName": "SwiftRaydioSDK.InteractionType",
-                "usr": "s:14SwiftRaydioSDK15InteractionTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14SwiftRaydioSDK15InteractionTypeO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s14SwiftRaydioSDK15InteractionTypeO2eeoiySbAC_ACtFZ",
-            "moduleName": "SwiftRaydioSDK",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14SwiftRaydioSDK15InteractionTypeO9hashValueSivp",
-            "mangledName": "$s14SwiftRaydioSDK15InteractionTypeO9hashValueSivp",
-            "moduleName": "SwiftRaydioSDK",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14SwiftRaydioSDK15InteractionTypeO9hashValueSivg",
-                "mangledName": "$s14SwiftRaydioSDK15InteractionTypeO9hashValueSivg",
-                "moduleName": "SwiftRaydioSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14SwiftRaydioSDK15InteractionTypeO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s14SwiftRaydioSDK15InteractionTypeO4hash4intoys6HasherVz_tF",
-            "moduleName": "SwiftRaydioSDK",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14SwiftRaydioSDK15InteractionTypeO6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s14SwiftRaydioSDK15InteractionTypeO6encode2toys7Encoder_p_tKF",
-            "moduleName": "SwiftRaydioSDK",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:14SwiftRaydioSDK15InteractionTypeO",
-        "mangledName": "$s14SwiftRaydioSDK15InteractionTypeO",
-        "moduleName": "SwiftRaydioSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
         ]
       },
       {
@@ -6816,79 +6324,6 @@
           },
           {
             "kind": "Var",
-            "name": "interactionLog$",
-            "printedName": "interactionLog$",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AnyPublisher",
-                "printedName": "Combine.AnyPublisher<SwiftRaydioSDK.InteractionLog, Swift.Never>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InteractionLog",
-                    "printedName": "SwiftRaydioSDK.InteractionLog",
-                    "usr": "s:14SwiftRaydioSDK14InteractionLogV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ],
-                "usr": "s:7Combine12AnyPublisherV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14SwiftRaydioSDK9LogAccessP15interactionLog$7Combine12AnyPublisherVyAA011InteractionD0Vs5NeverOGvp",
-            "mangledName": "$s14SwiftRaydioSDK9LogAccessP15interactionLog$7Combine12AnyPublisherVyAA011InteractionD0Vs5NeverOGvp",
-            "moduleName": "SwiftRaydioSDK",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AnyPublisher",
-                    "printedName": "Combine.AnyPublisher<SwiftRaydioSDK.InteractionLog, Swift.Never>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InteractionLog",
-                        "printedName": "SwiftRaydioSDK.InteractionLog",
-                        "usr": "s:14SwiftRaydioSDK14InteractionLogV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Never",
-                        "printedName": "Swift.Never",
-                        "usr": "s:s5NeverO"
-                      }
-                    ],
-                    "usr": "s:7Combine12AnyPublisherV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14SwiftRaydioSDK9LogAccessP15interactionLog$7Combine12AnyPublisherVyAA011InteractionD0Vs5NeverOGvg",
-                "mangledName": "$s14SwiftRaydioSDK9LogAccessP15interactionLog$7Combine12AnyPublisherVyAA011InteractionD0Vs5NeverOGvg",
-                "moduleName": "SwiftRaydioSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : SwiftRaydioSDK.LogAccess>",
-                "sugared_genericSig": "<Self where Self : SwiftRaydioSDK.LogAccess>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "systemErrorLog$",
             "printedName": "systemErrorLog$",
             "children": [
@@ -7217,6 +6652,13 @@
       "offset": 6904,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Logging\/Internal\/Logger.swift",
+      "kind": "Array",
+      "offset": 1670,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Config.swift",

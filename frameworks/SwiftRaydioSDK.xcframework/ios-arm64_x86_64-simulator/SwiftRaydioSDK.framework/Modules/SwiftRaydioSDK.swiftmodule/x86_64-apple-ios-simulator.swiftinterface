@@ -31,8 +31,8 @@ public protocol ListenStateAccess : AnyObject {
 public protocol LogDelegate {
   func onInformationLog(_ information: SwiftRaydioSDK.InformationLog)
   func onErrorLog(_ error: SwiftRaydioSDK.ErrorLog)
-  func onInteractionLog(_ interaction: SwiftRaydioSDK.InteractionLog)
   func onSystemErrorLog(_ systemError: SwiftRaydioSDK.SystemErrorLog)
+  func onJsonLog(_ json: Swift.String)
 }
 public protocol RaydioSDKStateDelegate {
   func onRaydioSDKStateChanged(_ state: SwiftRaydioSDK.RaydioSDKState)
@@ -75,21 +75,6 @@ public enum RaydioPlayState : Swift.Equatable {
 public protocol SDKStateAccess : AnyObject {
   var sdkState$: Combine.AnyPublisher<SwiftRaydioSDK.RaydioSDKState, Swift.Never> { get }
   var skdStateDelegate: (any SwiftRaydioSDK.RaydioSDKStateDelegate)? { get set }
-}
-public struct InteractionLog : Swift.Encodable {
-  public var type: SwiftRaydioSDK.InteractionType
-  public var stream: SwiftRaydioSDK.MycrocastStream
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public enum InteractionType : Swift.Encodable {
-  case play
-  case pause
-  public static func == (a: SwiftRaydioSDK.InteractionType, b: SwiftRaydioSDK.InteractionType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 public enum RaydioError : Swift.Equatable, Swift.Error, Swift.Encodable {
   case NOT_SUBSCRIBED
@@ -177,7 +162,6 @@ public protocol StreamsDelegate {
 public protocol LogAccess : AnyObject {
   var informationLog$: Combine.AnyPublisher<SwiftRaydioSDK.InformationLog, Swift.Never> { get }
   var errorLog$: Combine.AnyPublisher<SwiftRaydioSDK.ErrorLog, Swift.Never> { get }
-  var interactionLog$: Combine.AnyPublisher<SwiftRaydioSDK.InteractionLog, Swift.Never> { get }
   var systemErrorLog$: Combine.AnyPublisher<SwiftRaydioSDK.SystemErrorLog, Swift.Never> { get }
   var jsonLog$: Combine.AnyPublisher<Swift.String, Swift.Never> { get }
   var logDelegate: (any SwiftRaydioSDK.LogDelegate)? { get set }
@@ -186,7 +170,5 @@ extension SwiftRaydioSDK.WorkflowLogs : Swift.Equatable {}
 extension SwiftRaydioSDK.WorkflowLogs : Swift.Hashable {}
 extension SwiftRaydioSDK.WorkflowLogs : Swift.RawRepresentable {}
 extension SwiftRaydioSDK.RaydioSDKState : Swift.Hashable {}
-extension SwiftRaydioSDK.InteractionType : Swift.Equatable {}
-extension SwiftRaydioSDK.InteractionType : Swift.Hashable {}
 extension SwiftRaydioSDK.ListenFailedReason : Swift.Equatable {}
 extension SwiftRaydioSDK.ListenFailedReason : Swift.Hashable {}
