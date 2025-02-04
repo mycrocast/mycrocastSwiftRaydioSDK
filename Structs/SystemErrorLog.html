@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>InteractionType Enumeration Reference</title>
+    <title>SystemErrorLog Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/InteractionType" class="dashAnchor"></a>
-    <a title="InteractionType Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Struct/SystemErrorLog" class="dashAnchor"></a>
+    <a title="SystemErrorLog Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        InteractionType Enumeration Reference
+        SystemErrorLog Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -79,7 +79,7 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/InteractionType.html">InteractionType</a>
+                <a href="../Enums/ListenFailedReason.html">ListenFailedReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/RaydioError.html">RaydioError</a>
@@ -99,25 +99,37 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Protocols/ErrorAccess.html">ErrorAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/ErrorDelegate.html">ErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListenStateAccess.html">ListenStateAccess</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/ListenStateDelegate.html">ListenStateDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/LogAccess.html">LogAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/LogDelegate.html">LogDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a>
+                <a href="../Protocols/MycrocastRaydioSDK.html">MycrocastRaydioSDK</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/RaydioSDKStateDelegate.html">RaydioSDKStateDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/StreamGroupDelegate.html">StreamGroupDelegate</a>
+                <a href="../Protocols/SDKStateAccess.html">SDKStateAccess</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/StreamsProviding.html">StreamsProviding</a>
+                <a href="../Protocols/StreamsAccess.html">StreamsAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StreamsDelegate.html">StreamsDelegate</a>
               </li>
             </ul>
           </li>
@@ -125,22 +137,19 @@
             <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK8ErrorLogV">ErrorLog</a>
+                <a href="../Structs/ErrorLog.html">ErrorLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK14InformationLogV">InformationLog</a>
+                <a href="../Structs/InformationLog.html">InformationLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK14InteractionLogV">InteractionLog</a>
+                <a href="../Structs/Language.html">Language</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/StreamGroup.html">StreamGroup</a>
+                <a href="../Structs/MycrocastStream.html">MycrocastStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/StreamGroupEntry.html">StreamGroupEntry</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK14SystemErrorLogV">SystemErrorLog</a>
+                <a href="../Structs/SystemErrorLog.html">SystemErrorLog</a>
               </li>
             </ul>
           </li>
@@ -149,15 +158,16 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>InteractionType</h1>
+            <h1>SystemErrorLog</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">InteractionType</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SystemErrorLog</span> <span class="p">:</span> <span class="kt">Encodable</span></code></pre>
 
                 </div>
               </div>
-            <p>enum representing what has happened</p>
+            <p>Represents a low level system error that was thrown
+at some point during some workflow</p>
 
           </section>
           <section class="section task-group-section">
@@ -166,9 +176,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK15InteractionTypeO4playyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/play" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK15InteractionTypeO4playyA2CmF">play</a>
+                    <a name="/s:14SwiftRaydioSDK14SystemErrorLogV8workflowAA12WorkflowLogsOvp"></a>
+                    <a name="//apple_ref/swift/Property/workflow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK14SystemErrorLogV8workflowAA12WorkflowLogsOvp">workflow</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -176,13 +186,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The workflow this error occured</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">play</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">workflow</span><span class="p">:</span> <span class="kt"><a href="../Enums/WorkflowLogs.html">WorkflowLogs</a></span></code></pre>
 
                         </div>
                       </div>
@@ -192,9 +203,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK15InteractionTypeO5pauseyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/pause" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK15InteractionTypeO5pauseyA2CmF">pause</a>
+                    <a name="/s:14SwiftRaydioSDK14SystemErrorLogV11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK14SystemErrorLogV11descriptionSSvp">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -202,14 +213,41 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>a play was triggerred</p>
+                        <p>A short description if possible about the error</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">pause</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK14SystemErrorLogV5errorSSvp"></a>
+                    <a name="//apple_ref/swift/Property/error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK14SystemErrorLogV5errorSSvp">error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The actual error</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -221,7 +259,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-02-06)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-02-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

@@ -36,38 +36,6 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="Guides.html">Guides</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="accessibility.html">Accessibility</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="connecting-to-the-backend-and-receivng-the-streams.html">Connecting to the backend and receivng the streams</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="error-handling.html">Error Handling</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="general-information.html">General Information</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="getting-started.html">Getting Started</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="how-to-start-a-stream.html">How to start a stream</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="listening-to-a-stream.html">Listening to a stream</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="logging.html">Logging</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="observing-background-state-and-network.html">Observing background state and network</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -79,7 +47,7 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/InteractionType.html">InteractionType</a>
+                <a href="Enums/ListenFailedReason.html">ListenFailedReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/RaydioError.html">RaydioError</a>
@@ -99,7 +67,7 @@
             <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Extensions.html#/s:14SwiftRaydioSDK15MediaSoupPlayerC">MediaSoupPlayer</a>
+                <a href="Extensions.html#/s:14SwiftRaydioSDK15MediasoupPlayerC">MediasoupPlayer</a>
               </li>
             </ul>
           </li>
@@ -107,25 +75,37 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Protocols/ErrorAccess.html">ErrorAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/ErrorDelegate.html">ErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ListenStateAccess.html">ListenStateAccess</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/ListenStateDelegate.html">ListenStateDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/LogAccess.html">LogAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/LogDelegate.html">LogDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a>
+                <a href="Protocols/MycrocastRaydioSDK.html">MycrocastRaydioSDK</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/RaydioSDKStateDelegate.html">RaydioSDKStateDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/StreamGroupDelegate.html">StreamGroupDelegate</a>
+                <a href="Protocols/SDKStateAccess.html">SDKStateAccess</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/StreamsProviding.html">StreamsProviding</a>
+                <a href="Protocols/StreamsAccess.html">StreamsAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/StreamsDelegate.html">StreamsDelegate</a>
               </li>
             </ul>
           </li>
@@ -133,22 +113,19 @@
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK8ErrorLogV">ErrorLog</a>
+                <a href="Structs/ErrorLog.html">ErrorLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14InformationLogV">InformationLog</a>
+                <a href="Structs/InformationLog.html">InformationLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14InteractionLogV">InteractionLog</a>
+                <a href="Structs/Language.html">Language</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/StreamGroup.html">StreamGroup</a>
+                <a href="Structs/MycrocastStream.html">MycrocastStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/StreamGroupEntry.html">StreamGroupEntry</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14SystemErrorLogV">SystemErrorLog</a>
+                <a href="Structs/SystemErrorLog.html">SystemErrorLog</a>
               </li>
             </ul>
           </li>
@@ -167,9 +144,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK15MediaSoupPlayerC"></a>
-                    <a name="//apple_ref/swift/Extension/MediaSoupPlayer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK15MediaSoupPlayerC">MediaSoupPlayer</a>
+                    <a name="/s:14SwiftRaydioSDK15MediasoupPlayerC"></a>
+                    <a name="//apple_ref/swift/Extension/MediasoupPlayer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK15MediasoupPlayerC">MediasoupPlayer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -183,8 +160,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MediaSoupPlayer</span><span class="p">:</span> <span class="kt">Mediasoup</span><span class="o">.</span><span class="kt">ReceiveTransportDelegate</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MediaSoupPlayer</span><span class="p">:</span> <span class="kt">Mediasoup</span><span class="o">.</span><span class="kt">ConsumerDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MediasoupPlayer</span><span class="p">:</span> <span class="kt">Mediasoup</span><span class="o">.</span><span class="kt">ReceiveTransportDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MediasoupPlayer</span><span class="p">:</span> <span class="kt">Mediasoup</span><span class="o">.</span><span class="kt">ConsumerDelegate</span></code></pre>
 
                         </div>
                       </div>
@@ -196,7 +173,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-02-05)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-02-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

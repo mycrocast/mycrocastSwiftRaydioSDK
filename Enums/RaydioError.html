@@ -79,7 +79,7 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/InteractionType.html">InteractionType</a>
+                <a href="../Enums/ListenFailedReason.html">ListenFailedReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/RaydioError.html">RaydioError</a>
@@ -99,25 +99,37 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Protocols/ErrorAccess.html">ErrorAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/ErrorDelegate.html">ErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListenStateAccess.html">ListenStateAccess</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/ListenStateDelegate.html">ListenStateDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/LogAccess.html">LogAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/LogDelegate.html">LogDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a>
+                <a href="../Protocols/MycrocastRaydioSDK.html">MycrocastRaydioSDK</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/RaydioSDKStateDelegate.html">RaydioSDKStateDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/StreamGroupDelegate.html">StreamGroupDelegate</a>
+                <a href="../Protocols/SDKStateAccess.html">SDKStateAccess</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/StreamsProviding.html">StreamsProviding</a>
+                <a href="../Protocols/StreamsAccess.html">StreamsAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StreamsDelegate.html">StreamsDelegate</a>
               </li>
             </ul>
           </li>
@@ -125,22 +137,19 @@
             <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK8ErrorLogV">ErrorLog</a>
+                <a href="../Structs/ErrorLog.html">ErrorLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK14InformationLogV">InformationLog</a>
+                <a href="../Structs/InformationLog.html">InformationLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK14InteractionLogV">InteractionLog</a>
+                <a href="../Structs/Language.html">Language</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/StreamGroup.html">StreamGroup</a>
+                <a href="../Structs/MycrocastStream.html">MycrocastStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/StreamGroupEntry.html">StreamGroupEntry</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK14SystemErrorLogV">SystemErrorLog</a>
+                <a href="../Structs/SystemErrorLog.html">SystemErrorLog</a>
               </li>
             </ul>
           </li>
@@ -153,7 +162,7 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">RaydioError</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Error</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">RaydioError</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Error</span><span class="p">,</span> <span class="kt">Encodable</span></code></pre>
 
                 </div>
               </div>
@@ -228,9 +237,9 @@ List contains the clicked streamId play it and if not display a message</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK0B5ErrorO13LISTEN_FAILEDyACSS_tcACmF"></a>
-                    <a name="//apple_ref/swift/Element/LISTEN_FAILED(streamId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK0B5ErrorO13LISTEN_FAILEDyACSS_tcACmF">LISTEN_FAILED(streamId:<wbr>)</a>
+                    <a name="/s:14SwiftRaydioSDK0B5ErrorO13LISTEN_FAILEDyACSS_AA18ListenFailedReasonOtcACmF"></a>
+                    <a name="//apple_ref/swift/Element/LISTEN_FAILED(streamId:reason:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK0B5ErrorO13LISTEN_FAILEDyACSS_AA18ListenFailedReasonOtcACmF">LISTEN_FAILED(streamId:<wbr>reason:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -248,7 +257,7 @@ The same solution as for STREAM_NOT_FOUND could be applied</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">LISTEN_FAILED</span><span class="p">(</span><span class="nv">streamId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">LISTEN_FAILED</span><span class="p">(</span><span class="nv">streamId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">reason</span><span class="p">:</span> <span class="kt"><a href="../Enums/ListenFailedReason.html">ListenFailedReason</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -288,7 +297,7 @@ There is no recovery possible of the action and just an information could be dis
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-02-06)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-02-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

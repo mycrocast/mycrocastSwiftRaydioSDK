@@ -78,7 +78,7 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/InteractionType.html">InteractionType</a>
+                <a href="Enums/ListenFailedReason.html">ListenFailedReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/RaydioError.html">RaydioError</a>
@@ -98,25 +98,37 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Protocols/ErrorAccess.html">ErrorAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/ErrorDelegate.html">ErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ListenStateAccess.html">ListenStateAccess</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/ListenStateDelegate.html">ListenStateDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/LogAccess.html">LogAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/LogDelegate.html">LogDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a>
+                <a href="Protocols/MycrocastRaydioSDK.html">MycrocastRaydioSDK</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/RaydioSDKStateDelegate.html">RaydioSDKStateDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/StreamGroupDelegate.html">StreamGroupDelegate</a>
+                <a href="Protocols/SDKStateAccess.html">SDKStateAccess</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/StreamsProviding.html">StreamsProviding</a>
+                <a href="Protocols/StreamsAccess.html">StreamsAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/StreamsDelegate.html">StreamsDelegate</a>
               </li>
             </ul>
           </li>
@@ -124,22 +136,19 @@
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK8ErrorLogV">ErrorLog</a>
+                <a href="Structs/ErrorLog.html">ErrorLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14InformationLogV">InformationLog</a>
+                <a href="Structs/InformationLog.html">InformationLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14InteractionLogV">InteractionLog</a>
+                <a href="Structs/Language.html">Language</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/StreamGroup.html">StreamGroup</a>
+                <a href="Structs/MycrocastStream.html">MycrocastStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/StreamGroupEntry.html">StreamGroupEntry</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14SystemErrorLogV">SystemErrorLog</a>
+                <a href="Structs/SystemErrorLog.html">SystemErrorLog</a>
               </li>
             </ul>
           </li>
@@ -154,11 +163,16 @@
 <p>A short overview how to connect the sdk and receive the current liste streams.</p>
 <h2 id='getting-started' class='heading'>Getting started</h2>
 
-<p>After you started the SDK and received the <code><a href="Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a></code></p>
+<p>After you started the SDK and received the <code><a href="Protocols/MycrocastRaydioSDK.html">MycrocastRaydioSDK</a></code></p>
 
-<p>You can start the <code><a href="Protocols/RaydioSDKProviding.html#/s:14SwiftRaydioSDK0B12SDKProvidingP7connectyyF">connect()</a></code>function.</p>
+<p>You can start the <code><a href="Protocols/MycrocastRaydioSDK.html#/s:14SwiftRaydioSDK09MycrocastbC0P7connectSbyYaF">connect()</a></code>function.</p>
+<pre class="highlight swift"><code><span class="c1">/// connect the SDK, returns true if successfull</span>
+<span class="kd">func</span> <span class="nf">connect</span><span class="p">()</span> <span class="k">async</span> <span class="o">-&gt;</span> <span class="kt">Bool</span>
+</code></pre>
 
-<p>But before you do you should register a delegate for the <code><a href="Protocols/RaydioSDKStateDelegate.html">RaydioSDKStateDelegate</a></code>to receive updates for the state of the sdk.</p>
+<p>But before you do you should register a delegate for the <code><a href="Protocols/RaydioSDKStateDelegate.html">RaydioSDKStateDelegate</a></code>to receive updates for the state of the sdk. Or use the combine publisher.</p>
+
+<p>Both are found in the <code><a href="Protocols/SDKStateAccess.html">SDKStateAccess</a></code> from <code><a href="Protocols/MycrocastRaydioSDK.html#/s:14SwiftRaydioSDK09MycrocastbC0P14sdkStateAccessAA08SDKStateG0_pvp">sdkStateAccess</a></code></p>
 <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RaydioSDKStateDelegate</span> <span class="p">{</span>
     <span class="kd">func</span> <span class="nf">onRaydioSDKStateChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">RaydioSDKState</span><span class="p">)</span>
 <span class="p">}</span>
@@ -170,12 +184,12 @@
 <span class="p">}</span>
 </code></pre>
 
-<p>Use the <code><a href="Protocols/RaydioSDKProviding.html#/s:14SwiftRaydioSDK0B12SDKProvidingP16sdkStateDelegateAA0b8SDKStateG0_pSgvp">sdkStateDelegate</a></code> to register the delegate.</p>
+<p>Use the <code>RaydioSDKProviding/sdkStateDelegate</code> to register the delegate.</p>
 
 <p>After you registered the delegate and called the connect function you will receive a state update with either connected or disconnected.</p>
 <h3 id='handling-disconnected' class='heading'>Handling disconnected</h3>
 
-<p>Everytime you receive the disconnected state you should reconnect the sdk if possible by calling the <code><a href="Protocols/RaydioSDKProviding.html#/s:14SwiftRaydioSDK0B12SDKProvidingP9reconnectyyF">reconnect()</a></code> method.</p>
+<p>Everytime you receive the disconnected state you should reconnect the sdk if possible by calling the <code>RaydioSDKProviding/reconnect()</code> method.</p>
 
 <p>When do you receive the disconnect state?</p>
 
@@ -198,101 +212,93 @@
 
 <p>You now have established the connection to our backend and can start requesting the current live streams:</p>
 
-<p>For that call the <code><a href="Protocols/RaydioSDKProviding.html#/s:14SwiftRaydioSDK0B12SDKProvidingP14requestStreamsyyF">requestStreams()</a></code> function from the sdk.</p>
+<p>For that call the <code><a href="Protocols/MycrocastRaydioSDK.html#/s:14SwiftRaydioSDK09MycrocastbC0P14refreshStreamsSayAA0D6StreamVGyYaF">refreshStreams()</a></code> function from the sdk.</p>
 
-<p>Before doing this you should register the delegate that will acatually receive the streams and updates for those streams <code><a href="Protocols/StreamGroupDelegate.html">StreamGroupDelegate</a></code></p>
+<p>Before doing this you should register to receive updates.</p>
 
-<p>Descriptions of the different functions are provided in the comments. </p>
-<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Foundation</span>
+<p>Everything related to streams is handled via the <code><a href="Protocols/StreamsAccess.html">StreamsAccess</a></code> from <code><a href="Protocols/MycrocastRaydioSDK.html#/s:14SwiftRaydioSDK09MycrocastbC0P13streamsAccessAA07StreamsF0_pvp">streamsAccess</a></code></p>
+<pre class="highlight swift"><code><span class="c1">/// The interface to access everything related to the streams</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StreamsAccess</span><span class="p">:</span> <span class="kt">AnyObject</span> <span class="p">{</span>
+    <span class="c1">/// The list of currently available streams</span>
+    <span class="k">var</span> <span class="nv">streams</span><span class="p">:</span> <span class="p">[</span><span class="kt">MycrocastStream</span><span class="p">]</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
 
-<span class="c1">/// Implement this delegate to receive updates when a streams are changed</span>
-<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StreamGroupDelegate</span> <span class="p">{</span>
+    <span class="c1">/// Publisher that contains the current list and will</span>
+    <span class="c1">/// publish the list again anytime an update happens either add, update or remove</span>
+    <span class="k">var</span> <span class="nv">streams</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">MycrocastStream</span><span class="p">],</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
 
-    <span class="c1">/// A new group was added, this is the first stream for a specific game</span>
-    <span class="c1">///</span>
-    <span class="c1">/// - Parameters:</span>
-    <span class="c1">///     - group: The newly added group (The first stream for this title))</span>
+    <span class="c1">/// Use this publisher in case you want to react to an add event</span>
+    <span class="c1">/// as this will always publish the lattest added stream</span>
+    <span class="c1">/// This does not hold state inernally (Passthrough)</span>
+    <span class="k">var</span> <span class="nv">streamAdded</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">MycrocastStream</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
 
-    <span class="kd">func</span> <span class="nf">onNewGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt">StreamGroup</span><span class="p">)</span>
+    <span class="c1">/// Use this publisher in case you want to react to an remove event</span>
+    <span class="c1">/// as this will always publish the lattest removed stream</span>
+    <span class="c1">/// This does not hold state inernally (Passthrough)</span>
+    <span class="k">var</span> <span class="nv">streamRemoved</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">MycrocastStream</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
 
-    <span class="c1">/// A group was updated, this can either mean, an additional stream was added, removed or that the state of</span>
-    <span class="c1">/// a stream changed (for example the mute state)</span>
-    <span class="c1">///</span>
-    <span class="c1">/// - Parameters:</span>
-    <span class="c1">///     - group: The updated group</span>
-    <span class="kd">func</span> <span class="nf">onGroupUpdated</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt">StreamGroup</span><span class="p">)</span>
+    <span class="c1">/// Use this publisher in case you want to react to an update event</span>
+    <span class="c1">/// as this will always publish the lattest updated stream</span>
+    <span class="c1">/// This does not hold state inernally (Passthrough)</span>
+    <span class="k">var</span> <span class="nv">streamUpdated</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">MycrocastStream</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
 
-    <span class="c1">/// A group was removed. This means there is no more stream online for the title of the group</span>
-    <span class="c1">///</span>
-    <span class="c1">/// - Parameters:</span>
-    <span class="c1">///     - group: The group that was removed</span>
-    <span class="kd">func</span> <span class="nf">onGroupRemoved</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt">StreamGroup</span><span class="p">)</span>
-
-    <span class="c1">/// We received the currently available streams. This is done when the connection to the server was established or the</span>
-    <span class="c1">/// Streams are requested again</span>
-    <span class="c1">///</span>
-    <span class="c1">/// - Parameters:</span>
-    <span class="c1">///     - groups: The list of groups</span>
-    <span class="kd">func</span> <span class="nf">onGroupsReceived</span><span class="p">(</span><span class="n">_</span> <span class="nv">groups</span><span class="p">:</span> <span class="p">[</span><span class="kt">StreamGroup</span><span class="p">])</span>
+    <span class="c1">/// You can register a delegate here in case you do not want to use</span>
+    <span class="c1">/// Combine that offers the same functionality but with callbacks</span>
+    <span class="k">var</span> <span class="nv">streamsDelegate</span><span class="p">:</span> <span class="kt">StreamsDelegate</span><span class="p">?</span> <span class="p">{</span><span class="k">get</span> <span class="k">set</span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
 
-<p>To to this you need to get the <code><a href="Protocols/StreamsProviding.html">StreamsProviding</a></code> protocol and on that you can register the delegate on the <code><a href="Protocols/StreamsProviding.html#/s:14SwiftRaydioSDK16StreamsProvidingP8delegateAA19StreamGroupDelegate_pSgvp">delegate</a></code> property.</p>
-<pre class="highlight swift"><code><span class="c1">/// Get access to the streams and you can register for updates of the streams here</span>
-<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StreamsProviding</span> <span class="p">{</span>
-    <span class="c1">/// List of current stream groups</span>
-    <span class="k">var</span> <span class="nv">groups</span><span class="p">:</span> <span class="p">[</span><span class="kt">StreamGroup</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span>
+<p>Either use the publishers or register the delegate.</p>
 
-    <span class="c1">/// The delegate to receive updates for changes within the stream groups</span>
-    <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">StreamGroupDelegate</span><span class="p">?</span> <span class="p">{</span><span class="k">get</span> <span class="k">set</span><span class="p">}</span>
+<p>The delegate provides the same functionality and has the following strucutre:</p>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StreamsDelegate</span> <span class="p">{</span>
+
+    <span class="c1">/// Will be called each time a new stream is added</span>
+    <span class="c1">/// with the stream that was just added</span>
+    <span class="kd">func</span> <span class="nf">onStreamAdded</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="kt">MycrocastStream</span><span class="p">)</span>
+
+    <span class="c1">/// Will be called each time a stream is removed</span>
+    <span class="c1">/// with the stream that was just removed</span>
+    <span class="kd">func</span> <span class="nf">onStreamRemoved</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="kt">MycrocastStream</span><span class="p">)</span>
+
+    <span class="c1">/// Will be called each time a stream is updated</span>
+    <span class="c1">/// with the stream that was just updated</span>
+    <span class="kd">func</span> <span class="nf">onStreamUpdated</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="kt">MycrocastStream</span><span class="p">)</span>
+
+    <span class="c1">/// Will be called each time the stream list is updated with the new</span>
+    <span class="c1">/// List. This is triggered for each create/update/delete</span>
+    <span class="kd">func</span> <span class="nf">onStreamListChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">streams</span><span class="p">:</span> <span class="p">[</span><span class="kt">MycrocastStream</span><span class="p">])</span>
 <span class="p">}</span>
 </code></pre>
+<h4 id='mycrocaststream' class='heading'>MycrocastStream</h4>
 
-<p>To get the <code><a href="Protocols/StreamsProviding.html">StreamsProviding</a></code> from the sdk use the <code><a href="Protocols/RaydioSDKProviding.html#/s:14SwiftRaydioSDK0B12SDKProvidingP13raydioStreamsAA0F9Providing_pvp">raydioStreams</a></code> property.</p>
-<h4 id='stream-groups' class='heading'>Stream Groups</h4>
-
-<p>A <code><a href="Structs/StreamGroup.html">StreamGroup</a></code> is a collection of streams that a grouped together by the same match.</p>
-<pre class="highlight swift"><code><span class="c1">/// A stream group represents a collection of all streams belonging to the same match</span>
+<p>A <code><a href="Structs/MycrocastStream.html">MycrocastStream</a></code> is a single broadcast from a user via MycrocastStudio</p>
+<pre class="highlight swift"><code>
+<span class="c1">/// A single stream that is currently online and playable</span>
 <span class="c1">///</span>
-<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StreamGroup</span> <span class="p">{</span>
-    <span class="c1">/// The title of the match</span>
-    <span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MycrocastStream</span><span class="p">:</span> <span class="kt">Encodable</span> <span class="p">{</span>
 
-    <span class="c1">/// The matchId provided by the backend</span>
-    <span class="kd">public</span> <span class="k">var</span> <span class="nv">matchId</span><span class="p">:</span> <span class="kt">String</span>
-
-    <span class="c1">/// All currrently available streams for the match</span>
-    <span class="kd">public</span> <span class="k">var</span> <span class="nv">entries</span><span class="p">:</span> <span class="p">[</span><span class="kt">StreamGroupEntry</span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre>
-
-<p>As you can see, there is a list of entries of type <code><a href="Structs/StreamGroupEntry.html">StreamGroupEntry</a></code>and all share the same title (the name of the match, like Denmark vs England).</p>
-<h5 id='streamgroupentry' class='heading'>StreamGroupEntry</h5>
-
-<p>A single stream within a group that can be used to listen to from the <code><a href="Structs/StreamGroupEntry.html#/s:14SwiftRaydioSDK16StreamGroupEntryV8streamIdSSvp">streamId</a></code> and contains the required information like the actual <code><a href="Structs/StreamGroupEntry.html#/s:14SwiftRaydioSDK16StreamGroupEntryV8languageSSvp">language</a></code> and if the streamer is currently <code><a href="Structs/StreamGroupEntry.html#/s:14SwiftRaydioSDK16StreamGroupEntryV7isMutedSbvp">isMuted</a></code> . The <code><a href="Structs/StreamGroupEntry.html#/s:14SwiftRaydioSDK16StreamGroupEntryV7matchIdSSvp">matchId</a></code>  is the same as in the corresponding group.</p>
-<pre class="highlight swift"><code><span class="c1">/// A single entry within a group</span>
-<span class="c1">/// This entry represents a stream as part of a group of streams belonging to the same match</span>
-<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StreamGroupEntry</span> <span class="p">{</span>
     <span class="c1">/// The language of the stream as the native name</span>
     <span class="c1">/// e.g for German it would state: Deutsch</span>
     <span class="kd">public</span> <span class="k">var</span> <span class="nv">language</span><span class="p">:</span> <span class="kt">String</span>
-
     <span class="c1">// The id of the stream</span>
     <span class="c1">// this is used for playing and others</span>
     <span class="kd">public</span> <span class="k">var</span> <span class="nv">streamId</span><span class="p">:</span> <span class="kt">String</span>
-
     <span class="c1">// is the stream currently muted from the streamer side</span>
     <span class="kd">public</span> <span class="k">var</span> <span class="nv">isMuted</span><span class="p">:</span> <span class="kt">Bool</span>
-
- <span class="c1">// The match id for the game provided by the backend</span>
+    <span class="c1">// The match id for the game provided by the backend</span>
     <span class="kd">public</span> <span class="k">var</span> <span class="nv">matchId</span><span class="p">:</span> <span class="kt">String</span>
+
+    <span class="c1">// The title provided by the streamer</span>
+    <span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span>
+    <span class="c1">// The streamer seems to have connection issues</span>
+    <span class="kd">public</span> <span class="k">var</span> <span class="nv">connectionIssues</span><span class="p">:</span> <span class="kt">Bool</span>
 <span class="p">}</span>
 </code></pre>
 <h3 id='when-to-request-streams' class='heading'>When to request streams</h3>
 
 <p>After the intial connection was established you should request the streams once.</p>
 
-<p>The delegate function <code><a href="Protocols/StreamGroupDelegate.html#/s:14SwiftRaydioSDK19StreamGroupDelegateP16onGroupsReceivedyySayAA0dE0VGF">onGroupsReceived(_:)</a></code> will be called with all currently available groups.</p>
+<p>The delegate function <code><a href="Protocols/StreamsDelegate.html#/s:14SwiftRaydioSDK15StreamsDelegateP19onStreamListChangedyySayAA09MycrocastG0VGF">onStreamListChanged(_:)</a></code> will be called with all currently available groups. The same hold true for the publisher.</p>
 
 <p>After that you will receive live updates on the other 3 functions of the delegate as long as the sdk is connected.</p>
 
@@ -305,7 +311,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-02-06)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-02-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

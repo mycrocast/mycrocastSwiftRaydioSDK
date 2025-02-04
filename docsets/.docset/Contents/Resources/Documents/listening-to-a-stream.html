@@ -78,7 +78,7 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/InteractionType.html">InteractionType</a>
+                <a href="Enums/ListenFailedReason.html">ListenFailedReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/RaydioError.html">RaydioError</a>
@@ -98,25 +98,37 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Protocols/ErrorAccess.html">ErrorAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/ErrorDelegate.html">ErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ListenStateAccess.html">ListenStateAccess</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/ListenStateDelegate.html">ListenStateDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/LogAccess.html">LogAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/LogDelegate.html">LogDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a>
+                <a href="Protocols/MycrocastRaydioSDK.html">MycrocastRaydioSDK</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/RaydioSDKStateDelegate.html">RaydioSDKStateDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/StreamGroupDelegate.html">StreamGroupDelegate</a>
+                <a href="Protocols/SDKStateAccess.html">SDKStateAccess</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/StreamsProviding.html">StreamsProviding</a>
+                <a href="Protocols/StreamsAccess.html">StreamsAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/StreamsDelegate.html">StreamsDelegate</a>
               </li>
             </ul>
           </li>
@@ -124,22 +136,19 @@
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK8ErrorLogV">ErrorLog</a>
+                <a href="Structs/ErrorLog.html">ErrorLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14InformationLogV">InformationLog</a>
+                <a href="Structs/InformationLog.html">InformationLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14InteractionLogV">InteractionLog</a>
+                <a href="Structs/Language.html">Language</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/StreamGroup.html">StreamGroup</a>
+                <a href="Structs/MycrocastStream.html">MycrocastStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/StreamGroupEntry.html">StreamGroupEntry</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14SystemErrorLogV">SystemErrorLog</a>
+                <a href="Structs/SystemErrorLog.html">SystemErrorLog</a>
               </li>
             </ul>
           </li>
@@ -163,9 +172,34 @@
     <span class="p">}</span>
 </code></pre>
 
-<p>After receiving the streams you can start listen to a stream by providing the corresponding <code><a href="Structs/StreamGroupEntry.html#/s:14SwiftRaydioSDK16StreamGroupEntryV8streamIdSSvp">streamId</a></code> of the <code><a href="Structs/StreamGroupEntry.html">StreamGroupEntry</a></code> to the <code><a href="Protocols/RaydioSDKProviding.html#/s:14SwiftRaydioSDK0B12SDKProvidingP4playyySSF">play(_:)</a></code> function of the sdk.</p>
+<p>After receiving the streams you can start listen to a stream by providing the corresponding <code><a href="Structs/MycrocastStream.html#/s:14SwiftRaydioSDK15MycrocastStreamV8streamIdSSvp">streamId</a></code> of the <code><a href="Structs/MycrocastStream.html">MycrocastStream</a></code> to the <code><a href="Protocols/MycrocastRaydioSDK.html#/s:14SwiftRaydioSDK09MycrocastbC0P10playStreamyAA18ListenFailedReasonOSgSSYaF">playStream(_:)</a></code> function of the sdk.</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">playStream</span><span class="p">(</span><span class="n">_</span> <span class="nv">streamId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">async</span> <span class="o">-&gt;</span> <span class="kt">ListenFailedReason</span><span class="p">?</span>
+</code></pre>
 
-<p>To receive updates of the play state you first should register the corresponding delegate to receive state updates.</p>
+<p>This function is async and should be awaited.</p>
+
+<p>The returned <code><a href="Enums/ListenFailedReason.html">ListenFailedReason</a></code> informs if anything went wrong. If it is not present the play was successful.</p>
+
+<p>Everything concerning the actual listen state is provided by the  the </p>
+
+<p><code><a href="Protocols/MycrocastRaydioSDK.html#/s:14SwiftRaydioSDK09MycrocastbC0P17listenStateAccessAA06ListenfG0_pvp">listenStateAccess</a></code></p>
+<pre class="highlight swift"><code><span class="c1">/// This protocol provides anything that belongs to the listening state</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ListenStateAccess</span><span class="p">:</span> <span class="kt">AnyObject</span> <span class="p">{</span>
+    <span class="c1">/// Publisher that pushes the latest play state.</span>
+    <span class="c1">/// The initial value is .idle</span>
+    <span class="k">var</span> <span class="nv">listenState</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">RaydioPlayState</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
+
+    <span class="c1">/// The delegate to register callbacks for the play state change</span>
+    <span class="c1">/// Use this or the reactive approach with the listenState$</span>
+    <span class="k">var</span> <span class="nv">listenStateDelegate</span><span class="p">:</span> <span class="kt">ListenStateDelegate</span><span class="p">?</span> <span class="p">{</span><span class="k">get</span> <span class="k">set</span><span class="p">}</span>
+
+    <span class="c1">/// determine if you are currently listening to the provided streamToken</span>
+    <span class="kd">func</span> <span class="nf">isListeningTo</span><span class="p">(</span><span class="n">_</span> <span class="nv">streamToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span>
+<span class="p">}</span>
+
+</code></pre>
+
+<p>To receive updates of the play state you first should register the corresponding delegate to receive state updates. This needs to be done on <code><a href="Protocols/ListenStateAccess.html">ListenStateAccess</a></code></p>
 <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ListenStateDelegate</span> <span class="p">{</span>
     <span class="kd">func</span> <span class="nf">onListenStageChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">playState</span><span class="p">:</span> <span class="kt">RaydioPlayState</span><span class="p">)</span>
 <span class="p">}</span>
@@ -182,9 +216,13 @@
 
 <p>A description of <code><a href="Enums/RaydioError.html">RaydioError</a></code> can be found <a href="error-handling.html">here</a></p>
 
-<p>To register the delegate use the. <code><a href="Protocols/RaydioSDKProviding.html#/s:14SwiftRaydioSDK0B12SDKProvidingP21listenerStateDelegateAA06ListenfG0_pSgvp">listenerStateDelegate</a></code> property of the sdk.</p>
-
 <p>This needs to be done only once.</p>
+
+<p>Alternatively you can also subscribe to the publishers provided by the <code><a href="Protocols/ListenStateAccess.html">ListenStateAccess</a></code></p>
+<pre class="highlight swift"><code>    <span class="c1">/// Publisher that pushes the latest play state.</span>
+    <span class="c1">/// The initial value is .idle</span>
+    <span class="k">var</span> <span class="nv">listenState</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">RaydioPlayState</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
+</code></pre>
 <h3 id='the-disconnected-state' class='heading'>The disconnected state</h3>
 
 <p>The <code><a href="Enums/RaydioPlayState.html#/s:14SwiftRaydioSDK0B9PlayStateO12disconnectedyA2CmF">disconnected</a></code> state can be normal in case the listener paused. Otherwise this can be based on network issues of either the listener or streamer.</p>
@@ -204,7 +242,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-02-06)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-02-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

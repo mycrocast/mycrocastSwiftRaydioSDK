@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RaydioSDKState Enumeration Reference</title>
+    <title>LogAccess Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/RaydioSDKState" class="dashAnchor"></a>
-    <a title="RaydioSDKState Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Protocol/LogAccess" class="dashAnchor"></a>
+    <a title="LogAccess Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        RaydioSDKState Enumeration Reference
+        LogAccess Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -158,15 +158,16 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>RaydioSDKState</h1>
+            <h1>LogAccess</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">RaydioSDKState</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LogAccess</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                 </div>
               </div>
-            <p>The state of the sdk</p>
+            <p>Protocol to access anything regarding the logging within the sdk.
+Here you can subscribe and access the different logs</p>
 
           </section>
           <section class="section task-group-section">
@@ -175,9 +176,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK0B8SDKStateO4idleyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/idle" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK0B8SDKStateO4idleyA2CmF">idle</a>
+                    <a name="/s:14SwiftRaydioSDK9LogAccessP15informationLog$7Combine12AnyPublisherVyAA011InformationD0Vs5NeverOGvp"></a>
+                    <a name="//apple_ref/swift/Property/informationLog$" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK9LogAccessP15informationLog$7Combine12AnyPublisherVyAA011InformationD0Vs5NeverOGvp">informationLog$</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -185,13 +186,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Subscribe to this Publisher to receive information events</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">idle</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">informationLog</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/InformationLog.html">InformationLog</a></span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -201,9 +203,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK0B8SDKStateO9connectedyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/connected" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK0B8SDKStateO9connectedyA2CmF">connected</a>
+                    <a name="/s:14SwiftRaydioSDK9LogAccessP9errorLog$7Combine12AnyPublisherVyAA05ErrorD0Vs5NeverOGvp"></a>
+                    <a name="//apple_ref/swift/Property/errorLog$" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK9LogAccessP9errorLog$7Combine12AnyPublisherVyAA05ErrorD0Vs5NeverOGvp">errorLog$</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -211,13 +213,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Subscribe to this publisher to receive error events from raydio</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">connected</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">errorLog</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ErrorLog.html">ErrorLog</a></span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -227,9 +230,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK0B8SDKStateO12disconnectedyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/disconnected" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK0B8SDKStateO12disconnectedyA2CmF">disconnected</a>
+                    <a name="/s:14SwiftRaydioSDK9LogAccessP15systemErrorLog$7Combine12AnyPublisherVyAA06SystemgD0Vs5NeverOGvp"></a>
+                    <a name="//apple_ref/swift/Property/systemErrorLog$" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK9LogAccessP15systemErrorLog$7Combine12AnyPublisherVyAA06SystemgD0Vs5NeverOGvp">systemErrorLog$</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -237,13 +240,71 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Subscribe to this publisher to receive system errors that are not specific for raydio</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">disconnected</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">systemErrorLog</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/SystemErrorLog.html">SystemErrorLog</a></span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK9LogAccessP8jsonLog$7Combine12AnyPublisherVySSs5NeverOGvp"></a>
+                    <a name="//apple_ref/swift/Property/jsonLog$" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK9LogAccessP8jsonLog$7Combine12AnyPublisherVySSs5NeverOGvp">jsonLog$</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscribe to this publisher in case you just want the log
+to log it and you do not need to react to the different kind of logs
+The String contains withe type of log followed by the json representation
+of the actual log class</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">jsonLog</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK9LogAccessP11logDelegateAA0dG0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/logDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK9LogAccessP11logDelegateAA0dG0_pSgvp">logDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Alternative way to get the logs instead of using the reactive approach</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">logDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/LogDelegate.html">LogDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

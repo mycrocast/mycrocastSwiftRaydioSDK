@@ -78,7 +78,7 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/InteractionType.html">InteractionType</a>
+                <a href="Enums/ListenFailedReason.html">ListenFailedReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/RaydioError.html">RaydioError</a>
@@ -98,25 +98,37 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Protocols/ErrorAccess.html">ErrorAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/ErrorDelegate.html">ErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ListenStateAccess.html">ListenStateAccess</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/ListenStateDelegate.html">ListenStateDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/LogAccess.html">LogAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/LogDelegate.html">LogDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a>
+                <a href="Protocols/MycrocastRaydioSDK.html">MycrocastRaydioSDK</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/RaydioSDKStateDelegate.html">RaydioSDKStateDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/StreamGroupDelegate.html">StreamGroupDelegate</a>
+                <a href="Protocols/SDKStateAccess.html">SDKStateAccess</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/StreamsProviding.html">StreamsProviding</a>
+                <a href="Protocols/StreamsAccess.html">StreamsAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/StreamsDelegate.html">StreamsDelegate</a>
               </li>
             </ul>
           </li>
@@ -124,22 +136,19 @@
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK8ErrorLogV">ErrorLog</a>
+                <a href="Structs/ErrorLog.html">ErrorLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14InformationLogV">InformationLog</a>
+                <a href="Structs/InformationLog.html">InformationLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14InteractionLogV">InteractionLog</a>
+                <a href="Structs/Language.html">Language</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/StreamGroup.html">StreamGroup</a>
+                <a href="Structs/MycrocastStream.html">MycrocastStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/StreamGroupEntry.html">StreamGroupEntry</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14SystemErrorLogV">SystemErrorLog</a>
+                <a href="Structs/SystemErrorLog.html">SystemErrorLog</a>
               </li>
             </ul>
           </li>
@@ -162,7 +171,7 @@
 <li><p>InformationLog</p></li>
 <li><p>ErrorLog</p></li>
 <li><p>SystemErrorLog</p></li>
-<li><p>InteractionLog</p></li>
+<li><p>JsonLog</p></li>
 </ul>
 <h3 id='information-log' class='heading'>Information Log</h3>
 
@@ -232,32 +241,13 @@
     <span class="k">var</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span>
 <span class="p">}</span>
 </code></pre>
-<h3 id='interactionlog' class='heading'>InteractionLog</h3>
+<h3 id='jsonlog' class='heading'>JsonLog</h3>
 
-<p>The interaction log is produced when there was an interaction with the system.</p>
+<p>The json Log is just the string reprensation of all logs.</p>
 
-<p>This is either a play or pause of a stream. This can happen more times than the user actually presses play/pause as internal reconnects (after network issues) also trigger this.</p>
+<p>You can use this in case you really just want to log it somehwere and do not want to different things based on the log type.</p>
 
-<p>If you want to track the actual user only interactions, you should observe your ui.</p>
-
-<p>The struct:</p>
-<pre class="highlight swift"><code><span class="c1">/// Represents the interaction of play or pause</span>
-<span class="c1">/// This can be triggered by the user hitting a button but also by the system on a reconnect</span>
-<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">InteractionLog</span> <span class="p">{</span>
-    <span class="c1">/// What happened?</span>
-    <span class="k">var</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">InteractionType</span>
-
-    <span class="c1">/// The stream this interaction has happened on</span>
-    <span class="k">var</span> <span class="nv">stream</span><span class="p">:</span> <span class="kt">StreamGroupEntry</span>
-<span class="p">}</span>
-
-
-<span class="c1">/// enum representing what has happened</span>
-<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">InteractionType</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="n">play</span> <span class="c1">/// a play was triggerred</span>
-    <span class="k">case</span> <span class="n">pause</span> <span class="c1">/// a pause was triggered</span>
-<span class="p">}</span>
-</code></pre>
+<p>The Log has the structure &ldquo;[LogType] - LogMessage&rdquo;</p>
 <h2 id='how-to-receive-logs' class='heading'>How to receive logs</h2>
 
 <p>To actually receive the Logs you need to implement the LogDelegate</p>
@@ -271,9 +261,10 @@
     <span class="c1">/// related to some kind of workflow</span>
     <span class="kd">func</span> <span class="nf">onErrorLog</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorLog</span><span class="p">)</span>
 
-    <span class="c1">/// called to provide logs that a user has performed an interaction</span>
-    <span class="c1">/// this is limited to play and pause of  a stream</span>
-    <span class="kd">func</span> <span class="nf">onInteractionLog</span><span class="p">(</span><span class="n">_</span> <span class="nv">interaction</span><span class="p">:</span> <span class="kt">InteractionLog</span><span class="p">)</span>
+    <span class="c1">/// Use this if you do not need to react to different log types and just want a string representation of the log</span>
+    <span class="c1">/// The String contains withe type of log followed by the json representation</span>
+    <span class="c1">/// of the actual log class</span>
+    <span class="kd">func</span> <span class="nf">onJsonLog</span><span class="p">(</span><span class="n">_</span> <span class="nv">json</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span>
 
     <span class="c1">/// called to provide system errors, these are low level errors that cannot be mapped</span>
     <span class="c1">/// to any useful state in the sdk and should not happen</span>
@@ -281,12 +272,29 @@
 <span class="p">}</span>
 </code></pre>
 
-<p>You need to register this class on the <code>logDelegate</code> property of the <code><a href="Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a></code></p>
+<p>You need to register this class on the <code><a href="Protocols/LogAccess.html#/s:14SwiftRaydioSDK9LogAccessP11logDelegateAA0dG0_pSgvp">logDelegate</a></code> property of the <code>MycrocastRaydioSDK/LogAccess</code></p>
+
+<p>Alternative you can use the combine listener.</p>
+
+<p>The <code>MycrocastRaydio/LogAccess</code> provides different combine publisher</p>
+<pre class="highlight swift"><code>    <span class="c1">/// Subscribe to this Publisher to receive information events</span>
+    <span class="k">var</span> <span class="nv">informationLog</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">InformationLog</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
+    <span class="c1">/// Subscribe to this publisher to receive error events from raydio</span>
+    <span class="k">var</span> <span class="nv">errorLog</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">ErrorLog</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
+    <span class="c1">/// Subscribe to this publisher to receive system errors that are not specific for raydio</span>
+    <span class="k">var</span> <span class="nv">systemErrorLog</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">SystemErrorLog</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
+
+    <span class="c1">/// Subscribe to this publisher in case you just want the log</span>
+    <span class="c1">/// to log it and you do not need to react to the different kind of logs</span>
+    <span class="c1">/// The String contains withe type of log followed by the json representation</span>
+    <span class="c1">/// of the actual log class</span>
+    <span class="k">var</span> <span class="nv">jsonLog</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
+</code></pre>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-02-06)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-02-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

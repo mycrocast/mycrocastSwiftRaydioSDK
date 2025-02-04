@@ -79,7 +79,7 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/InteractionType.html">InteractionType</a>
+                <a href="Enums/ListenFailedReason.html">ListenFailedReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/RaydioError.html">RaydioError</a>
@@ -99,25 +99,37 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Protocols/ErrorAccess.html">ErrorAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/ErrorDelegate.html">ErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ListenStateAccess.html">ListenStateAccess</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/ListenStateDelegate.html">ListenStateDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/LogAccess.html">LogAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/LogDelegate.html">LogDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a>
+                <a href="Protocols/MycrocastRaydioSDK.html">MycrocastRaydioSDK</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/RaydioSDKStateDelegate.html">RaydioSDKStateDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/StreamGroupDelegate.html">StreamGroupDelegate</a>
+                <a href="Protocols/SDKStateAccess.html">SDKStateAccess</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/StreamsProviding.html">StreamsProviding</a>
+                <a href="Protocols/StreamsAccess.html">StreamsAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/StreamsDelegate.html">StreamsDelegate</a>
               </li>
             </ul>
           </li>
@@ -125,22 +137,19 @@
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK8ErrorLogV">ErrorLog</a>
+                <a href="Structs/ErrorLog.html">ErrorLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14InformationLogV">InformationLog</a>
+                <a href="Structs/InformationLog.html">InformationLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14InteractionLogV">InteractionLog</a>
+                <a href="Structs/Language.html">Language</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/StreamGroup.html">StreamGroup</a>
+                <a href="Structs/MycrocastStream.html">MycrocastStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/StreamGroupEntry.html">StreamGroupEntry</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs.html#/s:14SwiftRaydioSDK14SystemErrorLogV">SystemErrorLog</a>
+                <a href="Structs/SystemErrorLog.html">SystemErrorLog</a>
               </li>
             </ul>
           </li>
@@ -156,6 +165,116 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK09MycrocastbC0P"></a>
+                    <a name="//apple_ref/swift/Protocol/MycrocastRaydioSDK" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK09MycrocastbC0P">MycrocastRaydioSDK</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Protocols/MycrocastRaydioSDK.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MycrocastRaydioSDK</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK0B16SDKStateDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/RaydioSDKStateDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK0B16SDKStateDelegateP">RaydioSDKStateDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegate to provide information abot the state of the sdk</p>
+
+                        <a href="Protocols/RaydioSDKStateDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RaydioSDKStateDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK14SDKStateAccessP"></a>
+                    <a name="//apple_ref/swift/Protocol/SDKStateAccess" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK14SDKStateAccessP">SDKStateAccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol to access the sdk state</p>
+
+                        <a href="Protocols/SDKStateAccess.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SDKStateAccess</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK11ErrorAccessP"></a>
+                    <a name="//apple_ref/swift/Protocol/ErrorAccess" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK11ErrorAccessP">ErrorAccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Protocols/ErrorAccess.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ErrorAccess</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -179,6 +298,91 @@ SDK</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ErrorDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK17ListenStateAccessP"></a>
+                    <a name="//apple_ref/swift/Protocol/ListenStateAccess" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK17ListenStateAccessP">ListenStateAccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This protocol provides anything that belongs to the listening state</p>
+
+                        <a href="Protocols/ListenStateAccess.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ListenStateAccess</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK19ListenStateDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/ListenStateDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK19ListenStateDelegateP">ListenStateDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegate that will provide the listen state changes</p>
+
+                        <a href="Protocols/ListenStateDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ListenStateDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK9LogAccessP"></a>
+                    <a name="//apple_ref/swift/Protocol/LogAccess" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK9LogAccessP">LogAccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol to access anything regarding the logging within the sdk.
+Here you can subscribe and access the different logs</p>
+
+                        <a href="Protocols/LogAccess.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LogAccess</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -217,9 +421,9 @@ provided by the sdk</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK0B12SDKProvidingP"></a>
-                    <a name="//apple_ref/swift/Protocol/RaydioSDKProviding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK0B12SDKProvidingP">RaydioSDKProviding</a>
+                    <a name="/s:14SwiftRaydioSDK13StreamsAccessP"></a>
+                    <a name="//apple_ref/swift/Protocol/StreamsAccess" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK13StreamsAccessP">StreamsAccess</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -227,16 +431,15 @@ provided by the sdk</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Main protocol to work with and providing all required functions for
-the usage of the sdk</p>
+                        <p>The interface to access everything related to the streams</p>
 
-                        <a href="Protocols/RaydioSDKProviding.html" class="slightly-smaller">See more</a>
+                        <a href="Protocols/StreamsAccess.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RaydioSDKProviding</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StreamsAccess</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -246,9 +449,9 @@ the usage of the sdk</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK0B16SDKStateDelegateP"></a>
-                    <a name="//apple_ref/swift/Protocol/RaydioSDKStateDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK0B16SDKStateDelegateP">RaydioSDKStateDelegate</a>
+                    <a name="/s:14SwiftRaydioSDK15StreamsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/StreamsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK15StreamsDelegateP">StreamsDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -256,99 +459,14 @@ the usage of the sdk</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Delegate to provide information abot the state of the sdk</p>
-
-                        <a href="Protocols/RaydioSDKStateDelegate.html" class="slightly-smaller">See more</a>
+                        
+                        <a href="Protocols/StreamsDelegate.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RaydioSDKStateDelegate</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14SwiftRaydioSDK19StreamGroupDelegateP"></a>
-                    <a name="//apple_ref/swift/Protocol/StreamGroupDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK19StreamGroupDelegateP">StreamGroupDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Implement this delegate to receive updates when a streams are changed</p>
-
-                        <a href="Protocols/StreamGroupDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StreamGroupDelegate</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14SwiftRaydioSDK16StreamsProvidingP"></a>
-                    <a name="//apple_ref/swift/Protocol/StreamsProviding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK16StreamsProvidingP">StreamsProviding</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Get access to the streams and you can register for updates of the streams here</p>
-
-                        <a href="Protocols/StreamsProviding.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StreamsProviding</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14SwiftRaydioSDK19ListenStateDelegateP"></a>
-                    <a name="//apple_ref/swift/Protocol/ListenStateDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK19ListenStateDelegateP">ListenStateDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Delegate that will provide the listen state changes</p>
-
-                        <a href="Protocols/ListenStateDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ListenStateDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StreamsDelegate</span></code></pre>
 
                         </div>
                       </div>
@@ -360,7 +478,7 @@ the usage of the sdk</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-02-06)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-02-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

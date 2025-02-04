@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RaydioSDKState Enumeration Reference</title>
+    <title>StreamsDelegate Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/RaydioSDKState" class="dashAnchor"></a>
-    <a title="RaydioSDKState Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Protocol/StreamsDelegate" class="dashAnchor"></a>
+    <a title="StreamsDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        RaydioSDKState Enumeration Reference
+        StreamsDelegate Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -158,16 +158,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>RaydioSDKState</h1>
+            <h1>StreamsDelegate</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">RaydioSDKState</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StreamsDelegate</span></code></pre>
 
                 </div>
               </div>
-            <p>The state of the sdk</p>
-
+            
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -175,9 +174,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK0B8SDKStateO4idleyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/idle" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK0B8SDKStateO4idleyA2CmF">idle</a>
+                    <a name="/s:14SwiftRaydioSDK15StreamsDelegateP13onStreamAddedyyAA09MycrocastG0VF"></a>
+                    <a name="//apple_ref/swift/Method/onStreamAdded(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK15StreamsDelegateP13onStreamAddedyyAA09MycrocastG0VF">onStreamAdded(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -185,13 +184,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Will be called each time a new stream is added
+with the stream that was just added</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">idle</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onStreamAdded</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="kt"><a href="../Structs/MycrocastStream.html">MycrocastStream</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -201,9 +202,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK0B8SDKStateO9connectedyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/connected" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK0B8SDKStateO9connectedyA2CmF">connected</a>
+                    <a name="/s:14SwiftRaydioSDK15StreamsDelegateP15onStreamRemovedyyAA09MycrocastG0VF"></a>
+                    <a name="//apple_ref/swift/Method/onStreamRemoved(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK15StreamsDelegateP15onStreamRemovedyyAA09MycrocastG0VF">onStreamRemoved(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -211,13 +212,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Will be called each time a stream is removed
+with the stream that was just removed</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">connected</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onStreamRemoved</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="kt"><a href="../Structs/MycrocastStream.html">MycrocastStream</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -227,9 +230,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK0B8SDKStateO12disconnectedyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/disconnected" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK0B8SDKStateO12disconnectedyA2CmF">disconnected</a>
+                    <a name="/s:14SwiftRaydioSDK15StreamsDelegateP15onStreamUpdatedyyAA09MycrocastG0VF"></a>
+                    <a name="//apple_ref/swift/Method/onStreamUpdated(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK15StreamsDelegateP15onStreamUpdatedyyAA09MycrocastG0VF">onStreamUpdated(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -237,13 +240,43 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Will be called each time a stream is updated
+with the stream that was just updated</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">disconnected</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onStreamUpdated</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="kt"><a href="../Structs/MycrocastStream.html">MycrocastStream</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK15StreamsDelegateP19onStreamListChangedyySayAA09MycrocastG0VGF"></a>
+                    <a name="//apple_ref/swift/Method/onStreamListChanged(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK15StreamsDelegateP19onStreamListChangedyySayAA09MycrocastG0VGF">onStreamListChanged(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Will be called each time the stream list is updated with the new
+List. This is triggered for each create/update/delete</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onStreamListChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">streams</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/MycrocastStream.html">MycrocastStream</a></span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>StreamGroupDelegate Protocol Reference</title>
+    <title>ListenFailedReason Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/StreamGroupDelegate" class="dashAnchor"></a>
-    <a title="StreamGroupDelegate Protocol Reference"></a>
+    <a name="//apple_ref/swift/Enum/ListenFailedReason" class="dashAnchor"></a>
+    <a title="ListenFailedReason Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        StreamGroupDelegate Protocol Reference
+        ListenFailedReason Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -79,7 +79,7 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/InteractionType.html">InteractionType</a>
+                <a href="../Enums/ListenFailedReason.html">ListenFailedReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/RaydioError.html">RaydioError</a>
@@ -99,25 +99,37 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Protocols/ErrorAccess.html">ErrorAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/ErrorDelegate.html">ErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListenStateAccess.html">ListenStateAccess</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/ListenStateDelegate.html">ListenStateDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/LogAccess.html">LogAccess</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/LogDelegate.html">LogDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/RaydioSDKProviding.html">RaydioSDKProviding</a>
+                <a href="../Protocols/MycrocastRaydioSDK.html">MycrocastRaydioSDK</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/RaydioSDKStateDelegate.html">RaydioSDKStateDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/StreamGroupDelegate.html">StreamGroupDelegate</a>
+                <a href="../Protocols/SDKStateAccess.html">SDKStateAccess</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/StreamsProviding.html">StreamsProviding</a>
+                <a href="../Protocols/StreamsAccess.html">StreamsAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StreamsDelegate.html">StreamsDelegate</a>
               </li>
             </ul>
           </li>
@@ -125,22 +137,19 @@
             <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK8ErrorLogV">ErrorLog</a>
+                <a href="../Structs/ErrorLog.html">ErrorLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK14InformationLogV">InformationLog</a>
+                <a href="../Structs/InformationLog.html">InformationLog</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK14InteractionLogV">InteractionLog</a>
+                <a href="../Structs/Language.html">Language</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/StreamGroup.html">StreamGroup</a>
+                <a href="../Structs/MycrocastStream.html">MycrocastStream</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/StreamGroupEntry.html">StreamGroupEntry</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs.html#/s:14SwiftRaydioSDK14SystemErrorLogV">SystemErrorLog</a>
+                <a href="../Structs/SystemErrorLog.html">SystemErrorLog</a>
               </li>
             </ul>
           </li>
@@ -149,16 +158,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>StreamGroupDelegate</h1>
+            <h1>ListenFailedReason</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StreamGroupDelegate</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ListenFailedReason</span> <span class="p">:</span> <span class="kt">Encodable</span></code></pre>
 
                 </div>
               </div>
-            <p>Implement this delegate to receive updates when a streams are changed</p>
-
+            
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -166,9 +174,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK19StreamGroupDelegateP05onNewE0yyAA0dE0VF"></a>
-                    <a name="//apple_ref/swift/Method/onNewGroup(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK19StreamGroupDelegateP05onNewE0yyAA0dE0VF">onNewGroup(_:<wbr>)</a>
+                    <a name="/s:14SwiftRaydioSDK18ListenFailedReasonO10connectionyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/connection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK18ListenFailedReasonO10connectionyA2CmF">connection</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -176,35 +184,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A new group was added, this is the first stream for a specific game</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onNewGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt"><a href="../Structs/StreamGroup.html">StreamGroup</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">connection</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>group</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The newly added group (The first stream for this title))</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -212,9 +200,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK19StreamGroupDelegateP02onE7UpdatedyyAA0dE0VF"></a>
-                    <a name="//apple_ref/swift/Method/onGroupUpdated(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK19StreamGroupDelegateP02onE7UpdatedyyAA0dE0VF">onGroupUpdated(_:<wbr>)</a>
+                    <a name="/s:14SwiftRaydioSDK18ListenFailedReasonO7timeoutyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/timeout" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK18ListenFailedReasonO7timeoutyA2CmF">timeout</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -222,36 +210,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A group was updated, this can either mean, an additional stream was added, removed or that the state of
-a stream changed (for example the mute state)</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onGroupUpdated</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt"><a href="../Structs/StreamGroup.html">StreamGroup</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">timeout</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>group</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The updated group</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -259,9 +226,9 @@ a stream changed (for example the mute state)</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK19StreamGroupDelegateP02onE7RemovedyyAA0dE0VF"></a>
-                    <a name="//apple_ref/swift/Method/onGroupRemoved(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK19StreamGroupDelegateP02onE7RemovedyyAA0dE0VF">onGroupRemoved(_:<wbr>)</a>
+                    <a name="/s:14SwiftRaydioSDK18ListenFailedReasonO16handshakeFailureyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/handshakeFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK18ListenFailedReasonO16handshakeFailureyA2CmF">handshakeFailure</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -269,35 +236,15 @@ a stream changed (for example the mute state)</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A group was removed. This means there is no more stream online for the title of the group</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onGroupRemoved</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt"><a href="../Structs/StreamGroup.html">StreamGroup</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">handshakeFailure</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>group</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The group that was removed</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -305,9 +252,9 @@ a stream changed (for example the mute state)</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK19StreamGroupDelegateP16onGroupsReceivedyySayAA0dE0VGF"></a>
-                    <a name="//apple_ref/swift/Method/onGroupsReceived(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK19StreamGroupDelegateP16onGroupsReceivedyySayAA0dE0VGF">onGroupsReceived(_:<wbr>)</a>
+                    <a name="/s:14SwiftRaydioSDK18ListenFailedReasonO8noStreamyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/noStream" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK18ListenFailedReasonO8noStreamyA2CmF">noStream</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -315,36 +262,67 @@ a stream changed (for example the mute state)</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>We received the currently available streams. This is done when the connection to the server was established or the
-Streams are requested again</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onGroupsReceived</span><span class="p">(</span><span class="n">_</span> <span class="nv">groups</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/StreamGroup.html">StreamGroup</a></span><span class="p">])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noStream</span></code></pre>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>groups</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The list of groups</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK18ListenFailedReasonO7unknownyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unknown" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK18ListenFailedReasonO7unknownyA2CmF">unknown</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknown</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftRaydioSDK18ListenFailedReasonO17serverSideFailureyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverSideFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK18ListenFailedReasonO17serverSideFailureyA2CmF">serverSideFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverSideFailure</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -354,7 +332,7 @@ Streams are requested again</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2024-02-06)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-02-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
