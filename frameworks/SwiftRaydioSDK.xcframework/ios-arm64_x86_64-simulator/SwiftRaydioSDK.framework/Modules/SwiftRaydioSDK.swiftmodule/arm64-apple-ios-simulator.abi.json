@@ -6663,7 +6663,7 @@
     {
       "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 137,
+      "offset": 201,
       "length": 27,
       "value": "\"https:\/\/pbe.mycrocast.com\""
     },
