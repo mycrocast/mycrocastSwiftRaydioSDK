@@ -1454,6 +1454,13 @@
       },
       {
         "kind": "Import",
+        "name": "Mediasoup",
+        "printedName": "Mediasoup",
+        "declKind": "Import",
+        "moduleName": "SwiftRaydioSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2048,6 +2055,46 @@
           },
           {
             "kind": "Var",
+            "name": "aborted",
+            "printedName": "aborted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SwiftRaydioSDK.RaydioPlayState.Type) -> SwiftRaydioSDK.RaydioPlayState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RaydioPlayState",
+                    "printedName": "SwiftRaydioSDK.RaydioPlayState",
+                    "usr": "s:14SwiftRaydioSDK0B9PlayStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SwiftRaydioSDK.RaydioPlayState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RaydioPlayState",
+                        "printedName": "SwiftRaydioSDK.RaydioPlayState",
+                        "usr": "s:14SwiftRaydioSDK0B9PlayStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14SwiftRaydioSDK0B9PlayStateO7abortedyA2CmF",
+            "mangledName": "$s14SwiftRaydioSDK0B9PlayStateO7abortedyA2CmF",
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "paused",
             "printedName": "paused",
             "children": [
@@ -2081,10 +2128,7 @@
             "declKind": "EnumElement",
             "usr": "s:14SwiftRaydioSDK0B9PlayStateO6pausedyA2CmF",
             "mangledName": "$s14SwiftRaydioSDK0B9PlayStateO6pausedyA2CmF",
-            "moduleName": "SwiftRaydioSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
+            "moduleName": "SwiftRaydioSDK"
           },
           {
             "kind": "Var",
@@ -2800,6 +2844,43 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "ABORTED",
+            "printedName": "ABORTED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SwiftRaydioSDK.RaydioError.Type) -> SwiftRaydioSDK.RaydioError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RaydioError",
+                    "printedName": "SwiftRaydioSDK.RaydioError",
+                    "usr": "s:14SwiftRaydioSDK0B5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SwiftRaydioSDK.RaydioError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RaydioError",
+                        "printedName": "SwiftRaydioSDK.RaydioError",
+                        "usr": "s:14SwiftRaydioSDK0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14SwiftRaydioSDK0B5ErrorO7ABORTEDyA2CmF",
+            "mangledName": "$s14SwiftRaydioSDK0B5ErrorO7ABORTEDyA2CmF",
+            "moduleName": "SwiftRaydioSDK"
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -3114,6 +3195,46 @@
           },
           {
             "kind": "Var",
+            "name": "aborted",
+            "printedName": "aborted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SwiftRaydioSDK.ListenFailedReason.Type) -> SwiftRaydioSDK.ListenFailedReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ListenFailedReason",
+                    "printedName": "SwiftRaydioSDK.ListenFailedReason",
+                    "usr": "s:14SwiftRaydioSDK18ListenFailedReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SwiftRaydioSDK.ListenFailedReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ListenFailedReason",
+                        "printedName": "SwiftRaydioSDK.ListenFailedReason",
+                        "usr": "s:14SwiftRaydioSDK18ListenFailedReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14SwiftRaydioSDK18ListenFailedReasonO7abortedyA2CmF",
+            "mangledName": "$s14SwiftRaydioSDK18ListenFailedReasonO7abortedyA2CmF",
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "serverSideFailure",
             "printedName": "serverSideFailure",
             "children": [
@@ -3147,10 +3268,7 @@
             "declKind": "EnumElement",
             "usr": "s:14SwiftRaydioSDK18ListenFailedReasonO17serverSideFailureyA2CmF",
             "mangledName": "$s14SwiftRaydioSDK18ListenFailedReasonO17serverSideFailureyA2CmF",
-            "moduleName": "SwiftRaydioSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
+            "moduleName": "SwiftRaydioSDK"
           },
           {
             "kind": "Function",
@@ -6638,6 +6756,13 @@
       "offset": 314,
       "length": 15,
       "value": "\"serialisation\""
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "kind": "IntegerLiteral",
+      "offset": 879,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",

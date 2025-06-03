@@ -68,6 +68,7 @@ public enum RaydioPlayState : Swift.Equatable {
   case idle
   case connecting
   case failed(error: SwiftRaydioSDK.RaydioError)
+  case aborted
   case paused
   case disconnected
   public static func == (a: SwiftRaydioSDK.RaydioPlayState, b: SwiftRaydioSDK.RaydioPlayState) -> Swift.Bool
@@ -81,6 +82,7 @@ public enum RaydioError : Swift.Equatable, Swift.Error, Swift.Encodable {
   case STREAM_NOT_FOUND(streamId: Swift.String)
   case LISTEN_FAILED(streamId: Swift.String, reason: SwiftRaydioSDK.ListenFailedReason)
   case INTERNAL(description: Swift.String)
+  case ABORTED
   public static func == (a: SwiftRaydioSDK.RaydioError, b: SwiftRaydioSDK.RaydioError) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -90,6 +92,7 @@ public enum ListenFailedReason : Swift.Encodable {
   case handshakeFailure
   case noStream
   case unknown
+  case aborted
   case serverSideFailure
   public static func == (a: SwiftRaydioSDK.ListenFailedReason, b: SwiftRaydioSDK.ListenFailedReason) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
