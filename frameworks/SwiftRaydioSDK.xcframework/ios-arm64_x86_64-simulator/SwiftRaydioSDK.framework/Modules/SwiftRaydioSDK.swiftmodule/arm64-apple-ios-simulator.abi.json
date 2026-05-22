@@ -1112,6 +1112,281 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SwiftRaydioSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SpotAccess",
+        "printedName": "SpotAccess",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "spotPlay$",
+            "printedName": "spotPlay$",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<[SwiftRaydioSDK.MycrocastSpot], Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SwiftRaydioSDK.MycrocastSpot]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MycrocastSpot",
+                        "printedName": "SwiftRaydioSDK.MycrocastSpot",
+                        "usr": "s:14SwiftRaydioSDK13MycrocastSpotV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftRaydioSDK10SpotAccessP9spotPlay$7Combine12AnyPublisherVySayAA09MycrocastD0VGs5NeverOGvp",
+            "mangledName": "$s14SwiftRaydioSDK10SpotAccessP9spotPlay$7Combine12AnyPublisherVySayAA09MycrocastD0VGs5NeverOGvp",
+            "moduleName": "SwiftRaydioSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<[SwiftRaydioSDK.MycrocastSpot], Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[SwiftRaydioSDK.MycrocastSpot]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MycrocastSpot",
+                            "printedName": "SwiftRaydioSDK.MycrocastSpot",
+                            "usr": "s:14SwiftRaydioSDK13MycrocastSpotV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK10SpotAccessP9spotPlay$7Combine12AnyPublisherVySayAA09MycrocastD0VGs5NeverOGvg",
+                "mangledName": "$s14SwiftRaydioSDK10SpotAccessP9spotPlay$7Combine12AnyPublisherVySayAA09MycrocastD0VGs5NeverOGvg",
+                "moduleName": "SwiftRaydioSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftRaydioSDK.SpotAccess>",
+                "sugared_genericSig": "<Self where Self : SwiftRaydioSDK.SpotAccess>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "spotPlayDelegate",
+            "printedName": "spotPlayDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SwiftRaydioSDK.SpotPlayDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SpotPlayDelegate",
+                    "printedName": "any SwiftRaydioSDK.SpotPlayDelegate",
+                    "usr": "s:14SwiftRaydioSDK16SpotPlayDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftRaydioSDK10SpotAccessP16spotPlayDelegateAA0dgH0_pSgvp",
+            "mangledName": "$s14SwiftRaydioSDK10SpotAccessP16spotPlayDelegateAA0dgH0_pSgvp",
+            "moduleName": "SwiftRaydioSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SwiftRaydioSDK.SpotPlayDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SpotPlayDelegate",
+                        "printedName": "any SwiftRaydioSDK.SpotPlayDelegate",
+                        "usr": "s:14SwiftRaydioSDK16SpotPlayDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK10SpotAccessP16spotPlayDelegateAA0dgH0_pSgvg",
+                "mangledName": "$s14SwiftRaydioSDK10SpotAccessP16spotPlayDelegateAA0dgH0_pSgvg",
+                "moduleName": "SwiftRaydioSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftRaydioSDK.SpotAccess>",
+                "sugared_genericSig": "<Self where Self : SwiftRaydioSDK.SpotAccess>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SwiftRaydioSDK.SpotPlayDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SpotPlayDelegate",
+                        "printedName": "any SwiftRaydioSDK.SpotPlayDelegate",
+                        "usr": "s:14SwiftRaydioSDK16SpotPlayDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK10SpotAccessP16spotPlayDelegateAA0dgH0_pSgvs",
+                "mangledName": "$s14SwiftRaydioSDK10SpotAccessP16spotPlayDelegateAA0dgH0_pSgvs",
+                "moduleName": "SwiftRaydioSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftRaydioSDK.SpotAccess>",
+                "sugared_genericSig": "<Self where Self : SwiftRaydioSDK.SpotAccess>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK10SpotAccessP16spotPlayDelegateAA0dgH0_pSgvM",
+                "mangledName": "$s14SwiftRaydioSDK10SpotAccessP16spotPlayDelegateAA0dgH0_pSgvM",
+                "moduleName": "SwiftRaydioSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftRaydioSDK.SpotAccess>",
+                "sugared_genericSig": "<Self where Self : SwiftRaydioSDK.SpotAccess>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "spotPlayed",
+            "printedName": "spotPlayed(spotId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14SwiftRaydioSDK10SpotAccessP10spotPlayed0F2IdySi_tF",
+            "mangledName": "$s14SwiftRaydioSDK10SpotAccessP10spotPlayed0F2IdySi_tF",
+            "moduleName": "SwiftRaydioSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftRaydioSDK.SpotAccess>",
+            "sugared_genericSig": "<Self where Self : SwiftRaydioSDK.SpotAccess>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:14SwiftRaydioSDK10SpotAccessP",
+        "mangledName": "$s14SwiftRaydioSDK10SpotAccessP",
+        "moduleName": "SwiftRaydioSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1454,8 +1729,8 @@
       },
       {
         "kind": "Import",
-        "name": "Mediasoup",
-        "printedName": "Mediasoup",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "SwiftRaydioSDK"
       },
@@ -1788,7 +2063,7 @@
           {
             "kind": "Function",
             "name": "start",
-            "printedName": "start(_:)",
+            "printedName": "start(_:location:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1801,11 +2076,26 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftRaydioSDK.Location?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Location",
+                    "printedName": "SwiftRaydioSDK.Location",
+                    "usr": "s:14SwiftRaydioSDK8LocationV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14SwiftRaydioSDK0bC0C5startyAA09MycrocastbC0_pSSF",
-            "mangledName": "$s14SwiftRaydioSDK0bC0C5startyAA09MycrocastbC0_pSSF",
+            "usr": "s:14SwiftRaydioSDK0bC0C5start_8locationAA09MycrocastbC0_pSS_AA8LocationVSgtF",
+            "mangledName": "$s14SwiftRaydioSDK0bC0C5start_8locationAA09MycrocastbC0_pSS_AA8LocationVSgtF",
             "moduleName": "SwiftRaydioSDK",
             "declAttributes": [
               "AccessControl",
@@ -2055,46 +2345,6 @@
           },
           {
             "kind": "Var",
-            "name": "aborted",
-            "printedName": "aborted",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SwiftRaydioSDK.RaydioPlayState.Type) -> SwiftRaydioSDK.RaydioPlayState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RaydioPlayState",
-                    "printedName": "SwiftRaydioSDK.RaydioPlayState",
-                    "usr": "s:14SwiftRaydioSDK0B9PlayStateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SwiftRaydioSDK.RaydioPlayState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RaydioPlayState",
-                        "printedName": "SwiftRaydioSDK.RaydioPlayState",
-                        "usr": "s:14SwiftRaydioSDK0B9PlayStateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:14SwiftRaydioSDK0B9PlayStateO7abortedyA2CmF",
-            "mangledName": "$s14SwiftRaydioSDK0B9PlayStateO7abortedyA2CmF",
-            "moduleName": "SwiftRaydioSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "paused",
             "printedName": "paused",
             "children": [
@@ -2128,7 +2378,10 @@
             "declKind": "EnumElement",
             "usr": "s:14SwiftRaydioSDK0B9PlayStateO6pausedyA2CmF",
             "mangledName": "$s14SwiftRaydioSDK0B9PlayStateO6pausedyA2CmF",
-            "moduleName": "SwiftRaydioSDK"
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -2257,6 +2510,667 @@
         "moduleName": "SwiftRaydioSDK"
       },
       {
+        "kind": "TypeDecl",
+        "name": "MycrocastSpot",
+        "printedName": "MycrocastSpot",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftRaydioSDK13MycrocastSpotV2idSivp",
+            "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV2idSivp",
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV2idSivg",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV2idSivg",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV2idSivs",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV2idSivs",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV2idSivM",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV2idSivM",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "duration",
+            "printedName": "duration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftRaydioSDK13MycrocastSpotV8durationSivp",
+            "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV8durationSivp",
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV8durationSivg",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV8durationSivg",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV8durationSivs",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV8durationSivs",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV8durationSivM",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV8durationSivM",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftRaydioSDK13MycrocastSpotV3urlSSvp",
+            "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV3urlSSvp",
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV3urlSSvg",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV3urlSSvg",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV3urlSSvs",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV3urlSSvs",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV3urlSSvM",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV3urlSSvM",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftRaydioSDK13MycrocastSpotV5titleSSSgvp",
+            "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV5titleSSSgvp",
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV5titleSSSgvg",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV5titleSSSgvg",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV5titleSSSgvs",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV5titleSSSgvs",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV5titleSSSgvM",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV5titleSSSgvM",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bannerUrl",
+            "printedName": "bannerUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftRaydioSDK13MycrocastSpotV9bannerUrlSSSgvp",
+            "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV9bannerUrlSSSgvp",
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV9bannerUrlSSSgvg",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV9bannerUrlSSSgvg",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV9bannerUrlSSSgvs",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV9bannerUrlSSSgvs",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV9bannerUrlSSSgvM",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV9bannerUrlSSSgvM",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "websiteUrl",
+            "printedName": "websiteUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftRaydioSDK13MycrocastSpotV10websiteUrlSSSgvp",
+            "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV10websiteUrlSSSgvp",
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV10websiteUrlSSSgvg",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV10websiteUrlSSSgvg",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV10websiteUrlSSSgvs",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV10websiteUrlSSSgvs",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV10websiteUrlSSSgvM",
+                "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV10websiteUrlSSSgvM",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MycrocastSpot",
+                "printedName": "SwiftRaydioSDK.MycrocastSpot",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MycrocastSpot",
+                "printedName": "SwiftRaydioSDK.MycrocastSpot",
+                "usr": "s:14SwiftRaydioSDK13MycrocastSpotV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14SwiftRaydioSDK13MycrocastSpotV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV2eeoiySbAC_ACtFZ",
+            "moduleName": "SwiftRaydioSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14SwiftRaydioSDK13MycrocastSpotV",
+        "mangledName": "$s14SwiftRaydioSDK13MycrocastSpotV",
+        "moduleName": "SwiftRaydioSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -2325,6 +3239,272 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "SwiftRaydioSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Location",
+        "printedName": "Location",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "latitude",
+            "printedName": "latitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftRaydioSDK8LocationV8latitudeSdvp",
+            "mangledName": "$s14SwiftRaydioSDK8LocationV8latitudeSdvp",
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK8LocationV8latitudeSdvg",
+                "mangledName": "$s14SwiftRaydioSDK8LocationV8latitudeSdvg",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK8LocationV8latitudeSdvs",
+                "mangledName": "$s14SwiftRaydioSDK8LocationV8latitudeSdvs",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK8LocationV8latitudeSdvM",
+                "mangledName": "$s14SwiftRaydioSDK8LocationV8latitudeSdvM",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "longitude",
+            "printedName": "longitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftRaydioSDK8LocationV9longitudeSdvp",
+            "mangledName": "$s14SwiftRaydioSDK8LocationV9longitudeSdvp",
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK8LocationV9longitudeSdvg",
+                "mangledName": "$s14SwiftRaydioSDK8LocationV9longitudeSdvg",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK8LocationV9longitudeSdvs",
+                "mangledName": "$s14SwiftRaydioSDK8LocationV9longitudeSdvs",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK8LocationV9longitudeSdvM",
+                "mangledName": "$s14SwiftRaydioSDK8LocationV9longitudeSdvM",
+                "moduleName": "SwiftRaydioSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(latitude:longitude:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Location",
+                "printedName": "SwiftRaydioSDK.Location",
+                "usr": "s:14SwiftRaydioSDK8LocationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14SwiftRaydioSDK8LocationV8latitude9longitudeACSd_Sdtcfc",
+            "mangledName": "$s14SwiftRaydioSDK8LocationV8latitude9longitudeACSd_Sdtcfc",
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14SwiftRaydioSDK8LocationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14SwiftRaydioSDK8LocationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "SwiftRaydioSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14SwiftRaydioSDK8LocationV",
+        "mangledName": "$s14SwiftRaydioSDK8LocationV",
+        "moduleName": "SwiftRaydioSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2844,43 +4024,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "ABORTED",
-            "printedName": "ABORTED",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SwiftRaydioSDK.RaydioError.Type) -> SwiftRaydioSDK.RaydioError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RaydioError",
-                    "printedName": "SwiftRaydioSDK.RaydioError",
-                    "usr": "s:14SwiftRaydioSDK0B5ErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SwiftRaydioSDK.RaydioError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RaydioError",
-                        "printedName": "SwiftRaydioSDK.RaydioError",
-                        "usr": "s:14SwiftRaydioSDK0B5ErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:14SwiftRaydioSDK0B5ErrorO7ABORTEDyA2CmF",
-            "mangledName": "$s14SwiftRaydioSDK0B5ErrorO7ABORTEDyA2CmF",
-            "moduleName": "SwiftRaydioSDK"
-          },
-          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -2988,6 +4131,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -3195,46 +4345,6 @@
           },
           {
             "kind": "Var",
-            "name": "aborted",
-            "printedName": "aborted",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SwiftRaydioSDK.ListenFailedReason.Type) -> SwiftRaydioSDK.ListenFailedReason",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ListenFailedReason",
-                    "printedName": "SwiftRaydioSDK.ListenFailedReason",
-                    "usr": "s:14SwiftRaydioSDK18ListenFailedReasonO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SwiftRaydioSDK.ListenFailedReason.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ListenFailedReason",
-                        "printedName": "SwiftRaydioSDK.ListenFailedReason",
-                        "usr": "s:14SwiftRaydioSDK18ListenFailedReasonO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:14SwiftRaydioSDK18ListenFailedReasonO7abortedyA2CmF",
-            "mangledName": "$s14SwiftRaydioSDK18ListenFailedReasonO7abortedyA2CmF",
-            "moduleName": "SwiftRaydioSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "serverSideFailure",
             "printedName": "serverSideFailure",
             "children": [
@@ -3268,7 +4378,10 @@
             "declKind": "EnumElement",
             "usr": "s:14SwiftRaydioSDK18ListenFailedReasonO17serverSideFailureyA2CmF",
             "mangledName": "$s14SwiftRaydioSDK18ListenFailedReasonO17serverSideFailureyA2CmF",
-            "moduleName": "SwiftRaydioSDK"
+            "moduleName": "SwiftRaydioSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Function",
@@ -3798,6 +4911,75 @@
         "moduleName": "SwiftRaydioSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SpotPlayDelegate",
+        "printedName": "SpotPlayDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onPlaySpots",
+            "printedName": "onPlaySpots(spots:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SwiftRaydioSDK.MycrocastSpot]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MycrocastSpot",
+                    "printedName": "SwiftRaydioSDK.MycrocastSpot",
+                    "usr": "s:14SwiftRaydioSDK13MycrocastSpotV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14SwiftRaydioSDK16SpotPlayDelegateP02onE5Spots5spotsySayAA09MycrocastD0VG_tF",
+            "mangledName": "$s14SwiftRaydioSDK16SpotPlayDelegateP02onE5Spots5spotsySayAA09MycrocastD0VG_tF",
+            "moduleName": "SwiftRaydioSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftRaydioSDK.SpotPlayDelegate>",
+            "sugared_genericSig": "<Self where Self : SwiftRaydioSDK.SpotPlayDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:14SwiftRaydioSDK16SpotPlayDelegateP",
+        "mangledName": "$s14SwiftRaydioSDK16SpotPlayDelegateP",
+        "moduleName": "SwiftRaydioSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -5802,6 +6984,51 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "spotAccess",
+            "printedName": "spotAccess",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SpotAccess",
+                "printedName": "any SwiftRaydioSDK.SpotAccess",
+                "usr": "s:14SwiftRaydioSDK10SpotAccessP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14SwiftRaydioSDK09MycrocastbC0P10spotAccessAA04SpotF0_pvp",
+            "mangledName": "$s14SwiftRaydioSDK09MycrocastbC0P10spotAccessAA04SpotF0_pvp",
+            "moduleName": "SwiftRaydioSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SpotAccess",
+                    "printedName": "any SwiftRaydioSDK.SpotAccess",
+                    "usr": "s:14SwiftRaydioSDK10SpotAccessP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14SwiftRaydioSDK09MycrocastbC0P10spotAccessAA04SpotF0_pvg",
+                "mangledName": "$s14SwiftRaydioSDK09MycrocastbC0P10spotAccessAA04SpotF0_pvg",
+                "moduleName": "SwiftRaydioSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftRaydioSDK.MycrocastRaydioSDK>",
+                "sugared_genericSig": "<Self where Self : SwiftRaydioSDK.MycrocastRaydioSDK>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "connect",
             "printedName": "connect()",
@@ -6758,11 +7985,39 @@
       "value": "\"serialisation\""
     },
     {
-      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Listener.swift",
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Spot\/Spots.swift",
       "kind": "IntegerLiteral",
-      "offset": 879,
+      "offset": 71,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Spot\/Spots.swift",
+      "kind": "IntegerLiteral",
+      "offset": 189,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Spot\/Spots.swift",
+      "kind": "IntegerLiteral",
+      "offset": 194,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Spot\/Spots.swift",
+      "kind": "IntegerLiteral",
+      "offset": 199,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Spot\/Spots.swift",
+      "kind": "Array",
+      "offset": 338,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
@@ -6774,7 +8029,7 @@
     {
       "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Socket.swift",
       "kind": "BooleanLiteral",
-      "offset": 6921,
+      "offset": 6904,
       "length": 5,
       "value": "false"
     },
@@ -6788,14 +8043,21 @@
     {
       "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Socket\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 137,
+      "offset": 167,
       "length": 27,
       "value": "\"https:\/\/pbe.mycrocast.com\""
     },
     {
+      "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Listening\/Internal\/Spot\/SpotContainer.swift",
+      "kind": "Dictionary",
+      "offset": 86,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/sbeeckmann\/Documents\/GitHub\/swiftRaydioSDK\/SwiftRaydioSDK\/SwiftRaydioSDK\/V2\/Streams\/Internal\/Streams.swift",
       "kind": "Array",
-      "offset": 821,
+      "offset": 818,
       "length": 2,
       "value": "[]"
     }

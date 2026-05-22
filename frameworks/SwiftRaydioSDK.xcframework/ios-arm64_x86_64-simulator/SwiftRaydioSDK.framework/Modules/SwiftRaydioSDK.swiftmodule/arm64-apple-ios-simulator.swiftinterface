@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SwiftRaydioSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Combine
 import Foundation
 import Mediasoup
@@ -17,7 +17,9 @@ public enum WorkflowLogs : Swift.String, Swift.Encodable {
   case subscribing
   case streams
   case playing
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -25,7 +27,9 @@ public enum WorkflowLogs : Swift.String, Swift.Encodable {
 }
 public protocol ListenStateAccess : AnyObject {
   var listenState$: Combine.AnyPublisher<SwiftRaydioSDK.RaydioPlayState, Swift.Never> { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var listenStateDelegate: (any SwiftRaydioSDK.ListenStateDelegate)? { get set }
+  #endif
   func isListeningTo(_ streamToken: Swift.String) -> Swift.Bool
 }
 public protocol LogDelegate {
@@ -47,6 +51,13 @@ public enum RaydioSDKState : Swift.Equatable {
     get
   }
 }
+public protocol SpotAccess {
+  var spotPlay$: Combine.AnyPublisher<[SwiftRaydioSDK.MycrocastSpot], Swift.Never> { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var spotPlayDelegate: (any SwiftRaydioSDK.SpotPlayDelegate)? { get set }
+  #endif
+  func spotPlayed(spotId: Swift.Int)
+}
 public struct ErrorLog : Swift.Encodable {
   public var workflow: SwiftRaydioSDK.WorkflowLogs
   public var description: Swift.String
@@ -60,7 +71,9 @@ public struct InformationLog : Swift.Encodable {
 }
 @_hasMissingDesignatedInitializers public class RaydioSDK {
   public static let shared: SwiftRaydioSDK.RaydioSDK
-  public func start(_ token: Swift.String) -> any SwiftRaydioSDK.MycrocastRaydioSDK
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func start(_ token: Swift.String, location: SwiftRaydioSDK.Location? = nil) -> any SwiftRaydioSDK.MycrocastRaydioSDK
+  #endif
   @objc deinit
 }
 public enum RaydioPlayState : Swift.Equatable {
@@ -68,21 +81,36 @@ public enum RaydioPlayState : Swift.Equatable {
   case idle
   case connecting
   case failed(error: SwiftRaydioSDK.RaydioError)
-  case aborted
   case paused
   case disconnected
   public static func == (a: SwiftRaydioSDK.RaydioPlayState, b: SwiftRaydioSDK.RaydioPlayState) -> Swift.Bool
 }
+public struct MycrocastSpot : Swift.Equatable {
+  public var id: Swift.Int
+  public var duration: Swift.Int
+  public var url: Swift.String
+  public var title: Swift.String?
+  public var bannerUrl: Swift.String?
+  public var websiteUrl: Swift.String?
+  public static func == (a: SwiftRaydioSDK.MycrocastSpot, b: SwiftRaydioSDK.MycrocastSpot) -> Swift.Bool
+}
+public struct Location : Swift.Encodable {
+  public var latitude: Swift.Double
+  public var longitude: Swift.Double
+  public init(latitude: Swift.Double, longitude: Swift.Double)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 public protocol SDKStateAccess : AnyObject {
   var sdkState$: Combine.AnyPublisher<SwiftRaydioSDK.RaydioSDKState, Swift.Never> { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var skdStateDelegate: (any SwiftRaydioSDK.RaydioSDKStateDelegate)? { get set }
+  #endif
 }
 public enum RaydioError : Swift.Equatable, Swift.Error, Swift.Encodable {
   case NOT_SUBSCRIBED
   case STREAM_NOT_FOUND(streamId: Swift.String)
   case LISTEN_FAILED(streamId: Swift.String, reason: SwiftRaydioSDK.ListenFailedReason)
   case INTERNAL(description: Swift.String)
-  case ABORTED
   public static func == (a: SwiftRaydioSDK.RaydioError, b: SwiftRaydioSDK.RaydioError) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -92,7 +120,6 @@ public enum ListenFailedReason : Swift.Encodable {
   case handshakeFailure
   case noStream
   case unknown
-  case aborted
   case serverSideFailure
   public static func == (a: SwiftRaydioSDK.ListenFailedReason, b: SwiftRaydioSDK.ListenFailedReason) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
@@ -109,7 +136,12 @@ public protocol ListenStateDelegate {
 }
 public protocol ErrorAccess {
   var error$: Combine.AnyPublisher<SwiftRaydioSDK.RaydioError, Swift.Never> { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var errorDelegate: (any SwiftRaydioSDK.ErrorDelegate)? { get set }
+  #endif
+}
+public protocol SpotPlayDelegate {
+  func onPlaySpots(spots: [SwiftRaydioSDK.MycrocastSpot])
 }
 public struct SystemErrorLog : Swift.Encodable {
   public var workflow: SwiftRaydioSDK.WorkflowLogs
@@ -132,22 +164,31 @@ public protocol StreamsAccess : AnyObject {
   var streamAdded$: Combine.AnyPublisher<SwiftRaydioSDK.MycrocastStream, Swift.Never> { get }
   var streamRemoved$: Combine.AnyPublisher<SwiftRaydioSDK.MycrocastStream, Swift.Never> { get }
   var streamUpdated$: Combine.AnyPublisher<SwiftRaydioSDK.MycrocastStream, Swift.Never> { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var streamsDelegate: (any SwiftRaydioSDK.StreamsDelegate)? { get set }
+  #endif
 }
 public struct Language : Swift.Decodable {
   public var native: Swift.String
   public init(from decoder: any Swift.Decoder) throws
 }
 public protocol MycrocastRaydioSDK {
+  #if compiler(>=5.3) && $NonescapableTypes
   var activeStream: Swift.String? { get }
+  #endif
   var streamsAccess: any SwiftRaydioSDK.StreamsAccess { get }
   var logAccess: any SwiftRaydioSDK.LogAccess { get }
   var listenStateAccess: any SwiftRaydioSDK.ListenStateAccess { get }
   var sdkStateAccess: any SwiftRaydioSDK.SDKStateAccess { get }
   var errorAccess: any SwiftRaydioSDK.ErrorAccess { get }
+  var spotAccess: any SwiftRaydioSDK.SpotAccess { get }
   func connect() async -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   func reconnectAudio() async -> SwiftRaydioSDK.ListenFailedReason?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func playStream(_ streamId: Swift.String) async -> SwiftRaydioSDK.ListenFailedReason?
+  #endif
   func pauseCurrentStream()
   func onConnectionLost()
   func onConnectionReestablished() async -> Swift.Bool
@@ -167,7 +208,9 @@ public protocol LogAccess : AnyObject {
   var errorLog$: Combine.AnyPublisher<SwiftRaydioSDK.ErrorLog, Swift.Never> { get }
   var systemErrorLog$: Combine.AnyPublisher<SwiftRaydioSDK.SystemErrorLog, Swift.Never> { get }
   var jsonLog$: Combine.AnyPublisher<Swift.String, Swift.Never> { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var logDelegate: (any SwiftRaydioSDK.LogDelegate)? { get set }
+  #endif
 }
 extension SwiftRaydioSDK.WorkflowLogs : Swift.Equatable {}
 extension SwiftRaydioSDK.WorkflowLogs : Swift.Hashable {}
