@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ErrorLog Structure Reference</title>
+    <title>SpotAccess Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/ErrorLog" class="dashAnchor"></a>
-    <a title="ErrorLog Structure Reference"></a>
+    <a name="//apple_ref/swift/Protocol/SpotAccess" class="dashAnchor"></a>
+    <a title="SpotAccess Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        ErrorLog Structure Reference
+        SpotAccess Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -184,16 +184,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>ErrorLog</h1>
+            <h1>SpotAccess</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ErrorLog</span> <span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpotAccess</span></code></pre>
 
                 </div>
               </div>
-            <p>Represents an error log entry that is thrown by the sdk
-for a specific workflow and with some kind of description</p>
+            <p>Interface to handle anything related to spots (advertisements)</p>
 
           </section>
           <section class="section task-group-section">
@@ -202,9 +201,9 @@ for a specific workflow and with some kind of description</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK8ErrorLogV8workflowAA12WorkflowLogsOvp"></a>
-                    <a name="//apple_ref/swift/Property/workflow" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK8ErrorLogV8workflowAA12WorkflowLogsOvp">workflow</a>
+                    <a name="/s:14SwiftRaydioSDK10SpotAccessP9spotPlay$7Combine12AnyPublisherVySayAA09MycrocastD0VGs5NeverOGvp"></a>
+                    <a name="//apple_ref/swift/Property/spotPlay$" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK10SpotAccessP9spotPlay$7Combine12AnyPublisherVySayAA09MycrocastD0VGs5NeverOGvp">spotPlay$</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -212,14 +211,14 @@ for a specific workflow and with some kind of description</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The workflow at which the error occurred</p>
+                        <p>Publisher that riggers when a new Spot should be played</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">workflow</span><span class="p">:</span> <span class="kt"><a href="../Enums/WorkflowLogs.html">WorkflowLogs</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">spotPlay</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/MycrocastSpot.html">MycrocastSpot</a></span><span class="p">],</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -229,9 +228,9 @@ for a specific workflow and with some kind of description</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK8ErrorLogV11descriptionSSvp"></a>
-                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK8ErrorLogV11descriptionSSvp">description</a>
+                    <a name="/s:14SwiftRaydioSDK10SpotAccessP16spotPlayDelegateAA0dgH0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/spotPlayDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK10SpotAccessP16spotPlayDelegateAA0dgH0_pSgvp">spotPlayDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -239,14 +238,15 @@ for a specific workflow and with some kind of description</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A plain text description providing more information</p>
+                        <p>if you do not want to use the reactive way provided by the combine publisher,
+ use this delegate to receive spot plays</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">spotPlayDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpotPlayDelegate.html">SpotPlayDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -256,9 +256,9 @@ for a specific workflow and with some kind of description</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SwiftRaydioSDK8ErrorLogV5errorAA0bD0Ovp"></a>
-                    <a name="//apple_ref/swift/Property/error" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK8ErrorLogV5errorAA0bD0Ovp">error</a>
+                    <a name="/s:14SwiftRaydioSDK10SpotAccessP10spotPlayed0F2IdySi_tF"></a>
+                    <a name="//apple_ref/swift/Method/spotPlayed(spotId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftRaydioSDK10SpotAccessP10spotPlayed0F2IdySi_tF">spotPlayed(spotId:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -266,14 +266,15 @@ for a specific workflow and with some kind of description</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The actual error</p>
+                        <p>Call this function after you have finished playing an advertisement with the id of the advertisement
+This is needed for tracking purposes</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/RaydioError.html">RaydioError</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">spotPlayed</span><span class="p">(</span><span class="nv">spotId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

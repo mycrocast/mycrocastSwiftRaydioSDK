@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Classes  Reference</title>
+    <title>Geolocation  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,7 @@
     <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Section/Classes" class="dashAnchor"></a>
-    <a title="Classes  Reference"></a>
+    <a title="Geolocation  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (100% documented)</p>
@@ -29,7 +28,7 @@
       <p id="breadcrumbs">
         <a href="index.html"> Reference</a>
         <img id="carat" src="img/carat.png" alt=""/>
-        Classes  Reference
+        Geolocation  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -184,43 +183,34 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Classes</h1>
-            <p>The following classes are available globally.</p>
+            
+            <h2 id='geolocation' class='heading'>Geolocation</h2>
 
-          </section>
-          <section class="section task-group-section">
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14SwiftRaydioSDK0bC0C"></a>
-                    <a name="//apple_ref/swift/Class/RaydioSDK" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftRaydioSDK0bC0C">RaydioSDK</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Entry point into the sdk</p>
+<p>Geolocation can be used to restrict the streams that are visible within the app.</p>
 
-                        <a href="Classes/RaydioSDK.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RaydioSDK</span></code></pre>
+<p>The use case is either due to some licensing rights, the streams should only be available in the stadion or in general a limited availability.</p>
 
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
+<p>This feature is optional and if no location is provided, all currently available streams are loaded for the account.</p>
+
+<p>Locations are currently managed by mycrocast and can be configured on a club or streamer level.</p>
+<h2 id='how-to-pass-a-location' class='heading'>How to pass a location</h2>
+
+<p>The location is to be expected to be passed on the initialisation of the SDK in the <code>RaydioSDK/start(_,_)</code>Function call.</p>
+
+<p>The location looks the following:</p>
+<pre class="highlight swift"><code><span class="c1">/// The location of the user</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Location</span> <span class="p">:</span> <span class="kt">Encodable</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="k">var</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span>
+    <span class="kd">public</span> <span class="k">var</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span>
+
+    <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">latitude</span> <span class="o">=</span> <span class="n">latitude</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">longitude</span> <span class="o">=</span> <span class="n">longitude</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre>
+
           </section>
         </section>
         <section id="footer">

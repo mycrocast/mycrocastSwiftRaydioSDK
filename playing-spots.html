@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Accessibility_Consideration  Reference</title>
+    <title>Playing Spots  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,7 +13,7 @@
     <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a title="Accessibility_Consideration  Reference"></a>
+    <a title="Playing Spots  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (100% documented)</p>
@@ -28,7 +28,7 @@
       <p id="breadcrumbs">
         <a href="index.html"> Reference</a>
         <img id="carat" src="img/carat.png" alt=""/>
-        Accessibility_Consideration  Reference
+        Playing Spots  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -38,7 +38,7 @@
             <a href="Guides.html">Guides</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="accessibility_consideration.html">Accessibility_Consideration</a>
+                <a href="accessibility-consideration.html">Accessibility Consideration</a>
               </li>
               <li class="nav-group-task">
                 <a href="connecting-to-the-backend-and-receivng-the-streams.html">Connecting to the backend and receivng the streams</a>
@@ -48,6 +48,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="general-information.html">General Information</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="geolocation.html">Geolocation</a>
               </li>
               <li class="nav-group-task">
                 <a href="getting-started.html">Getting Started</a>
@@ -63,6 +66,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="observing-background-state-and-network.html">Observing background state and network</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="playing-spots.html">Playing Spots</a>
               </li>
             </ul>
           </li>
@@ -91,6 +97,14 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/WorkflowLogs.html">WorkflowLogs</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions.html#/s:14SwiftRaydioSDK15MediasoupPlayerC">MediasoupPlayer</a>
               </li>
             </ul>
           </li>
@@ -125,6 +139,12 @@
                 <a href="Protocols/SDKStateAccess.html">SDKStateAccess</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/SpotAccess.html">SpotAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpotPlayDelegate.html">SpotPlayDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/StreamsAccess.html">StreamsAccess</a>
               </li>
               <li class="nav-group-task">
@@ -145,6 +165,12 @@
                 <a href="Structs/Language.html">Language</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/Location.html">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/MycrocastSpot.html">MycrocastSpot</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/MycrocastStream.html">MycrocastStream</a>
               </li>
               <li class="nav-group-task">
@@ -158,61 +184,68 @@
         <section>
           <section class="section">
             
-            <h1 id='accessibility' class='heading'>Accessibility</h1>
+            <h2 id='playing-spots' class='heading'>Playing Spots</h2>
 
-<p>As the goal is to make this feature work for visually impaired people we need to take into consideration the accessibility aspect.</p>
+<p>Spots/Advertisements or short audio clips are something optional that can be implemented and needs to be configured by the club itself.</p>
+<h3 id='what-is-a-spot' class='heading'>What is a spot</h3>
 
-<p>Below are some things to consider while developing the UI as the SDK does not provide any accessibility functionality out of the box.</p>
-<h2 id='how-to-use-the-voiceover' class='heading'>How to use the VoiceOver</h2>
+<p>These are normally used as sponsoring clips and can contain a website url to be opened on click as well as a bannerUrl to display as image.</p>
 
-<p>A short introduction on to how to use the functionality on iOS to get you started with testing.</p>
+<p>The complete MycrocastSpot looks the following:</p>
+<pre class="highlight swift"><code><span class="c1">/// A single spot, this is an advertisement configured from our platform</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MycrocastSpot</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="p">{</span>
+    <span class="c1">/// The id of the spot</span>
+    <span class="kd">public</span> <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span>
 
-<p>You move in lists while swiping with 2 fingers to right or left to move up or down the list.</p>
+    <span class="c1">/// How long is the duration of the spot</span>
+    <span class="kd">public</span> <span class="k">var</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Int</span>
 
-<p>You click something when having the button focused and one finger on the screen and tap with the second finger to confirm.</p>
+    <span class="c1">/// The url of the audio file to be played</span>
+    <span class="kd">public</span> <span class="k">var</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span>
 
-<p>Use swipe with 3 fingers up or down to scroll.</p>
-<h2 id='font-size' class='heading'>Font size</h2>
+    <span class="c1">/// An advertisement can have a banner configured</span>
+    <span class="c1">/// This is the title of the banner</span>
+    <span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span>
 
-<p>There are people who are using a magnifing glass and read the text letter by letter.</p>
+    <span class="c1">/// This is the url to the image of the banner</span>
+    <span class="kd">public</span> <span class="k">var</span> <span class="nv">bannerUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span>
 
-<p>Therefore a larger font size should be used and line breaks within a word should be avoided at all cost</p>
-<h2 id='contrast' class='heading'>Contrast</h2>
+    <span class="c1">/// The banner can have a call to action link like a webpage configured</span>
+    <span class="c1">/// This is the specific url</span>
+    <span class="kd">public</span> <span class="k">var</span> <span class="nv">websiteUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='access-to-spots' class='heading'>Access to spots</h3>
 
-<p>A higher contrast can help people navigate better and identify areas of interest.</p>
+<p>To get access to the spots you need to use <code>MycrocastRaydioSDK/SpotAccess</code></p>
+<pre class="highlight swift"><code><span class="c1">/// Interface to handle anything related to spots (advertisements)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpotAccess</span> <span class="p">{</span>
+    <span class="c1">/// Publisher that riggers when a new Spot should be played</span>
+    <span class="k">var</span> <span class="nv">spotPlay</span><span class="err">$</span><span class="p">:</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">MycrocastSpot</span><span class="p">],</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span><span class="k">get</span><span class="p">}</span>
 
-<p>This could be for example a white play button on a black background.</p>
+    <span class="c1">/// if you do not want to use the reactive way provided by the combine publisher,</span>
+    <span class="c1">///  use this delegate to receive spot plays</span>
+    <span class="k">var</span> <span class="nv">spotPlayDelegate</span><span class="p">:</span> <span class="kt">SpotPlayDelegate</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span>
 
-<p>The Image of the play button should also be a lot bigger.</p>
-<h2 id='screenreader' class='heading'>Screenreader</h2>
 
-<p>You can easily test your application with the screenreader enabled in iOS.</p>
+    <span class="c1">/// Call this function after you have finished playing an advertisement with the id of the advertisement</span>
+    <span class="c1">/// This is needed for tracking purposes</span>
+    <span class="kd">func</span> <span class="nf">spotPlayed</span><span class="p">(</span><span class="nv">spotId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span>
+<span class="p">}</span>
 
-<p>Things to consider for screenreader:</p>
+</code></pre>
 
-<ul>
-<li><p>Are there visual elements with no information? Disable them for the screenreader in UIKit you would do this with <code>isAccessibilityElement = false</code></p></li>
-<li><p>Add information to any icon that displays a state - e.g. a play button displaying the play icon. You can do this in UIKit with <code>accessibilityLabel</code> </p></li>
-<li><p>A text has changed on the screen? You can refocus it to force the screenreader to read it again. This would be done in UIKit with <code> UIAccessibility.post(notification: .screenChanged, argument: THE_LABEL)</code></p></li>
-<li><p>Keep the focus in the overlay if displayed. If you display a bottom sheet or a popup dialog you should use a focus trap (if not provided by the system) so that the user cannot navigate out of the element with the screenreader</p></li>
-<li><p>Use the correct elements or at least provide the correct roles. If you have an element that you can click and it is not a button you need to provide the correct traits. In UIKit it would be <code>accessibilityTraits</code> .  Why? Because the screenreader would read first the text of the button and afterwards &lsquo;Button&rsquo; or &lsquo;Taste&rsquo; in german. This is mandatory for the user to know, that this element is clickable.</p></li>
-<li><p>Everything above will have something similar in SwiftUI</p></li>
-</ul>
-<h2 id='announcer' class='heading'>Announcer</h2>
+<p>After playing a spot you need to call <code>SpotAccess/spotPlayed(_)</code> to register the playback. This is required for statistical purposes.</p>
 
-<p>Sometimes it makes sense to announce something for the user (spoken by the system).</p>
+<p>You can evaluate if you want to actually play an advertisement based on some kind of metric.</p>
+<h2 id='when-are-spot-plays-triggered' class='heading'>When are spot plays triggered?</h2>
 
-<p>Below are some consideration when to use this functionality.</p>
-
-<ul>
-<li><p>Something changed in the UI state without the interaction of the user. For example a new StreamGroup was added. You could announce that information (but maybe only when the user is not activly listening to another stream)</p></li>
-<li><p>A state has changed e.g. the Stream that the user is currently listening too has ended and was removed.</p></li>
-</ul>
+<p>The first time is during connection, if the user did not have a spot play in the last 12.5 Minutes. Apart from the &ldquo;PreSteam&rdquo; &ldquo;InStream&rdquo; spots can be triggered from the streamer itself via the streaming plattform.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-02-04)</p>
+          <p>&copy; 2025 <a class="link" href="https://mycrocast.com" target="_blank" rel="external noopener">mycrocast Gmbh</a>. All rights reserved. (Last updated: 2025-12-02)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
